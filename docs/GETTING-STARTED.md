@@ -78,7 +78,8 @@ design/owners/not-this.md         the list with reasons
 design/references/exemplars.json  the roster of sites (append-only)
 design/references/NARRATIVE.md    your read of the group
 design/exemplars/                 the captures a round must cite
-design/specs/  design/rounds/     empty, for the chain
+design/specs/                     empty, for the chain
+design/<date>/                    one folder per round, beside references/
 ```
 
 Then it checks what it wrote the way the gate reads it, and prints either "every input the
@@ -95,5 +96,6 @@ proof, checks, readers, seal. `A-ROUND.md` walks through it. When a step refuses
 It will not tell you the design is good. Every gate here is a floor: it catches a wireframe, a
 paraphrased brief, an uncited technique, a reader who would leave. A page can clear all of it
 and still be wrong. The example under `example/consulting-site` is a real project's real inputs
-and one sealed round; read its `VISION.md` to see what "in your own words" looks like when it
-is not a form being filled.
+and one round that was sealed and then withdrawn, the founder's reason in its manifest; read
+its `VISION.md` to see what "in your own words" looks like when it is not a form being filled,
+and its `critique.md` to see a round losing honestly.

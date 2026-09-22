@@ -142,7 +142,7 @@
    }
   ]
  },
- "rounds_dir": "design/rounds",
+ "rounds_dir": "design",
  "readers": {
   "_what": "Fresh model readers role-play the buyer against the served page. persona_file must be one of the owners; the-business.md describes who is paid to be accurate and what that costs them. labels: what a stranger might think is sold, the right answer first.",
   "persona_file": "design/owners/the-business.md",

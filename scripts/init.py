@@ -23,7 +23,9 @@ Writes, relative to the project dir:
     design/references/exemplars.json  the roster design-exemplar-capture.py reads (append-only)
     design/references/NARRATIVE.md    the human read of the group (craft.require_grounding)
     design/exemplars/                 the captures directions.md must cite (exemplars_dir)
-    design/specs/, design/rounds/     empty, for the chain to fill
+    design/specs/                     empty, for the chain to fill
+    design/<round>/                   each round, beside references/ (the gap producer reads
+                                      captures from the round's parent + references/)
 
 It then checks what it wrote the way the gate will: every anchor regex matches its owner file
 live, the vision has enough founder blocks, the persona is an owner, the narrative names every
@@ -171,7 +173,7 @@ def anchor_for(line: str) -> str:
 def write(project: Path, a: dict) -> dict:
     """Write every input file. Returns {relative path: what it is} for the report."""
     d = project / "design"
-    for sub in ("owners", "references", "exemplars", "specs", "rounds"):
+    for sub in ("owners", "references", "exemplars", "specs"):
         (d / sub).mkdir(parents=True, exist_ok=True)
     wrote = {}
     name = slug(a["project"])
@@ -235,7 +237,7 @@ def write(project: Path, a: dict) -> dict:
         "project": name,
         "_what": "Design-chain config. Every brief must quote each anchor VERBATIM, read live from the owner "
                  "files below. Paraphrase fails. If an owner file changes, yesterday's brief fails.",
-        "rounds_dir": "design/rounds",
+        "rounds_dir": "design",
         "exemplars_dir": "design/exemplars",
         "owners": [
             {"file": "design/owners/buyer.md", "anchors": [anchor_for(f"> \"{a['buyer_words'][0].strip().strip(chr(34))}\"")]},

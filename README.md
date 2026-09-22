@@ -70,8 +70,13 @@ of it and still be wrong. The seal means the chain ran. Your eye and your buyers
 
 `example/consulting-site/` is a real consulting site's real inputs: its vision notebook, the
 five owner documents the briefs quote, the exemplar captures and their narrative, and one
-sealed round with three directions. Client names are replaced. It is the answer key: the test
-suite checks that the gate still accepts it, so it cannot drift from what the chain wants.
+round with three directions that was sealed and then WITHDRAWN, with the founder's reason in
+its manifest. That is deliberate: a round that lost is the most instructive one to read, and a
+withdrawn round is a record the seal leaves alone. It also predates the reader gate and the
+brief-reads record, so the current chain would refuse it if you cleared the status; the test
+suite does exactly that on a copy, with the real producers, and checks the refusal names those
+gates. Client names are replaced. It is the answer key: the tests check that the gate still
+reads it, so it cannot drift from what the chain wants.
 
 ## Layout
 

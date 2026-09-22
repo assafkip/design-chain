@@ -8,7 +8,7 @@ each. The messages are quoted as the gate prints them; the exact wording lives i
 
 | The gate says | What it means | The fix |
 |---|---|---|
-| `no design-chain.json found above <page>` | The page is not under a project init set up. | Run `/design-chain:init` in the project folder, or move the round under `design/rounds/`. |
+| `no design-chain.json found above <page>` | The page is not under a project init set up. | Run `/design-chain:init` in the project folder, or move the round under `design/`, beside `references/`. |
 | `missing design/VISION.md: the chain declares a vision stage and the vision has not been written` | The config has a `vision` block and the file is gone. | Write it, or answer question 2 of init again. |
 | `VISION.md carries N founder block(s); 3 required` | Fewer than three dated, quoted lines. | Add lines shaped `**Founder, YYYY-MM-DD:** "their words"`. |
 | `owner anchor unreadable: <label> -> <line>` | An anchor regex in the config matches nothing in its owner file. The file changed. | Re-derive the anchor from the file as it is now, or restore the line. Never loosen the regex to `.*`. |

@@ -44,7 +44,7 @@ refused as invention. A manifest with no techniques is itself a gap.
 
 ## 4. Build
 
-One page per direction, `<Name>-laptop.html`, in the round folder. Design skills are engines:
+One page per direction, `<Name>-laptop.html`, in the round folder (`design/<date>/`, a sibling of `design/references/`, which is where the gap producer looks for the captures). Design skills are engines:
 call them inside the round and `design-engine-door.py` records each run in `engines.jsonl`.
 Called outside a round, the door refuses and names this command.
 
