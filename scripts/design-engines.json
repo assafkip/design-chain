@@ -1,140 +1,167 @@
 {
-  "_doc": "Design skills that run only inside a /design-chain round (dc-18). design-engine-door.py refuses a listed skill when the session has no active round. lane: site|brand|deck|motion. stage: the chain stage the engine serves.",
-  "engines": [
-    {
-      "skill": "frontend-design",
-      "lane": "site",
-      "stage": "build"
-    },
-    {
-      "skill": "ui-ux-pro-max",
-      "lane": "site",
-      "stage": "build"
-    },
-    {
-      "skill": "design",
-      "lane": "brand",
-      "stage": "build"
-    },
-    {
-      "skill": "brand",
-      "lane": "brand",
-      "stage": "build"
-    },
-    {
-      "skill": "design-room",
-      "lane": "site",
-      "stage": "critique"
-    },
-    {
-      "skill": "deck-ai",
-      "lane": "deck",
-      "stage": "build"
-    },
-    {
-      "skill": "slideshow",
-      "lane": "deck",
-      "stage": "build"
-    },
-    {
-      "skill": "hyperframes",
-      "lane": "motion",
-      "stage": "build"
-    },
-    {
-      "skill": "hyperframes-animation",
-      "lane": "motion",
-      "stage": "build"
-    },
-    {
-      "skill": "hyperframes-creative",
-      "lane": "motion",
-      "stage": "build"
-    },
-    {
-      "skill": "hyperframes-keyframes",
-      "lane": "motion",
-      "stage": "build"
-    },
-    {
-      "skill": "motion-graphics",
-      "lane": "motion",
-      "stage": "build"
-    },
-    {
-      "skill": "general-video",
-      "lane": "motion",
-      "stage": "build"
-    },
-    {
-      "skill": "website-to-video",
-      "lane": "motion",
-      "stage": "build"
-    },
-    {
-      "skill": "product-launch-video",
-      "lane": "motion",
-      "stage": "build"
-    },
-    {
-      "skill": "canvas-design",
-      "lane": "brand",
-      "stage": "build"
-    },
-    {
-      "skill": "web-artifacts-builder",
-      "lane": "site",
-      "stage": "build"
-    },
-    {
-      "skill": "theme-factory",
-      "lane": "brand",
-      "stage": "build"
-    },
-    {
-      "skill": "algorithmic-art",
-      "lane": "brand",
-      "stage": "build"
-    },
-    {
-      "skill": "scroll-craft",
-      "lane": "site",
-      "stage": "build"
-    },
-    {
-      "skill": "hyperframes-core",
-      "lane": "motion",
-      "stage": "build"
-    },
-    {
-      "skill": "hyperframes-media",
-      "lane": "motion",
-      "stage": "build"
-    },
-    {
-      "skill": "remotion-best-practices",
-      "lane": "motion",
-      "stage": "build"
-    },
-    {
-      "skill": "music-to-video",
-      "lane": "motion",
-      "stage": "build"
-    },
-    {
-      "skill": "pr-to-video",
-      "lane": "motion",
-      "stage": "build"
-    },
-    {
-      "skill": "explainer-visuals",
-      "lane": "motion",
-      "stage": "build"
-    },
-    {
-      "skill": "faceless-explainer",
-      "lane": "motion",
-      "stage": "build"
-    }
-  ]
+ "_doc": "Design skills that run only inside a /design-chain round (dc-18). design-engine-door.py refuses a listed skill when the session has no active round. lane: site|brand|deck|motion. stage: the chain stage the engine serves. source: where a person installs the engine from; none of them ship here except design-room. scripts/doctor.py reports which are installed; docs/ENGINES.md is the same table for reading.",
+ "engines": [
+  {
+   "skill": "frontend-design",
+   "lane": "site",
+   "stage": "build",
+   "source": "marketplace anthropics/claude-code, plugin frontend-design"
+  },
+  {
+   "skill": "ui-ux-pro-max",
+   "lane": "site",
+   "stage": "build",
+   "source": "marketplace assafkip/kipi-system, plugin kipi-design"
+  },
+  {
+   "skill": "design",
+   "lane": "brand",
+   "stage": "build",
+   "source": "marketplace assafkip/kipi-system, plugin kipi-design"
+  },
+  {
+   "skill": "brand",
+   "lane": "brand",
+   "stage": "build",
+   "source": "marketplace assafkip/kipi-system, plugin kipi-design"
+  },
+  {
+   "skill": "design-room",
+   "lane": "site",
+   "stage": "critique",
+   "source": "ships in this repo (skills/design-room)"
+  },
+  {
+   "skill": "deck-ai",
+   "lane": "deck",
+   "stage": "build",
+   "source": "marketplace assafkip/kipi-system, plugin kipi-core"
+  },
+  {
+   "skill": "slideshow",
+   "lane": "deck",
+   "stage": "build",
+   "source": "a personal skill of the original author; not needed for a site round"
+  },
+  {
+   "skill": "hyperframes",
+   "lane": "motion",
+   "stage": "build",
+   "source": "the hyperframes project's skills (npx hyperframes skills), installed as personal skills"
+  },
+  {
+   "skill": "hyperframes-animation",
+   "lane": "motion",
+   "stage": "build",
+   "source": "the hyperframes project's skills (npx hyperframes skills), installed as personal skills"
+  },
+  {
+   "skill": "hyperframes-creative",
+   "lane": "motion",
+   "stage": "build",
+   "source": "the hyperframes project's skills (npx hyperframes skills), installed as personal skills"
+  },
+  {
+   "skill": "hyperframes-keyframes",
+   "lane": "motion",
+   "stage": "build",
+   "source": "the hyperframes project's skills (npx hyperframes skills), installed as personal skills"
+  },
+  {
+   "skill": "motion-graphics",
+   "lane": "motion",
+   "stage": "build",
+   "source": "the hyperframes project's skills (npx hyperframes skills), installed as personal skills"
+  },
+  {
+   "skill": "general-video",
+   "lane": "motion",
+   "stage": "build",
+   "source": "the hyperframes project's skills (npx hyperframes skills), installed as personal skills"
+  },
+  {
+   "skill": "website-to-video",
+   "lane": "motion",
+   "stage": "build",
+   "source": "the hyperframes project's skills (npx hyperframes skills), installed as personal skills"
+  },
+  {
+   "skill": "product-launch-video",
+   "lane": "motion",
+   "stage": "build",
+   "source": "the hyperframes project's skills (npx hyperframes skills), installed as personal skills"
+  },
+  {
+   "skill": "canvas-design",
+   "lane": "brand",
+   "stage": "build",
+   "source": "marketplace anthropics/skills, plugin anthropic-agent-skills"
+  },
+  {
+   "skill": "web-artifacts-builder",
+   "lane": "site",
+   "stage": "build",
+   "source": "marketplace anthropics/skills, plugin anthropic-agent-skills"
+  },
+  {
+   "skill": "theme-factory",
+   "lane": "brand",
+   "stage": "build",
+   "source": "marketplace anthropics/skills, plugin anthropic-agent-skills"
+  },
+  {
+   "skill": "algorithmic-art",
+   "lane": "brand",
+   "stage": "build",
+   "source": "marketplace anthropics/skills, plugin anthropic-agent-skills"
+  },
+  {
+   "skill": "scroll-craft",
+   "lane": "site",
+   "stage": "build",
+   "source": "marketplace nateherkai/scroll-craft, plugin nateherk-design"
+  },
+  {
+   "skill": "hyperframes-core",
+   "lane": "motion",
+   "stage": "build",
+   "source": "the hyperframes project's skills (npx hyperframes skills), installed as personal skills"
+  },
+  {
+   "skill": "hyperframes-media",
+   "lane": "motion",
+   "stage": "build",
+   "source": "the hyperframes project's skills (npx hyperframes skills), installed as personal skills"
+  },
+  {
+   "skill": "remotion-best-practices",
+   "lane": "motion",
+   "stage": "build",
+   "source": "the hyperframes project's skills (npx hyperframes skills), installed as personal skills"
+  },
+  {
+   "skill": "music-to-video",
+   "lane": "motion",
+   "stage": "build",
+   "source": "the hyperframes project's skills (npx hyperframes skills), installed as personal skills"
+  },
+  {
+   "skill": "pr-to-video",
+   "lane": "motion",
+   "stage": "build",
+   "source": "the hyperframes project's skills (npx hyperframes skills), installed as personal skills"
+  },
+  {
+   "skill": "explainer-visuals",
+   "lane": "motion",
+   "stage": "build",
+   "source": "the hyperframes project's skills (npx hyperframes skills), installed as personal skills"
+  },
+  {
+   "skill": "faceless-explainer",
+   "lane": "motion",
+   "stage": "build",
+   "source": "the hyperframes project's skills (npx hyperframes skills), installed as personal skills"
+  }
+ ]
 }

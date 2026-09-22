@@ -63,8 +63,9 @@ class OneDoorMenu(unittest.TestCase):
         data = json.loads((SCRIPTS / "design-engines.json").read_text())
         self.assertIn("_doc", data)
         for e in data["engines"]:
-            self.assertEqual(set(e), {"skill", "lane", "stage"}, e)
+            self.assertEqual(set(e), {"skill", "lane", "stage", "source"}, e)
             self.assertIn(e["lane"], ("site", "brand", "deck", "motion"), e)
+            self.assertTrue(e["source"].strip(), f"{e['skill']}: a stranger needs to know where it comes from")
 
     def test_the_command_doc_names_the_door(self):
         text = (ROOT / "commands" / "round.md").read_text()

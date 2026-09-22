@@ -10,11 +10,15 @@ Ten minutes to a project the chain accepts. An hour to a first sealed round.
 - Claude Code, with this repo installed as a plugin (the README has the one-line install). The
   reader gate runs fresh model readers through `claude -p`.
 
-Check all three at once:
+Check all of it at once, plus which design engines you have:
 
-```bash
-python3 -c "import playwright, PIL; print('python ok')" && node --version && claude --version
 ```
+/design-chain:doctor
+```
+
+The engines are the design skills a round's build step calls. They do not ship here (except
+`design-room`, which is enough to start). `ENGINES.md` lists each one, what it is for, and
+where to install it from; the doctor prints the same for whatever is missing.
 
 ## The seven questions
 

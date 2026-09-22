@@ -26,6 +26,12 @@ node --version                                                  # 18+, for the a
 
 To try it from a local checkout instead: `claude --plugin-dir /path/to/design-chain`.
 
+Then run `/design-chain:doctor`. The chain measures and seals on its own, but the BUILD step
+of a round calls design skills it does not ship (it calls them engines: `frontend-design`,
+`ui-ux-pro-max`, the hyperframes family, and so on). The doctor says which are installed and
+where the missing ones come from; `docs/ENGINES.md` is the same table with what each is for.
+`design-room` ships here and is enough to start a site round.
+
 ## Ten minutes to a project
 
 ```

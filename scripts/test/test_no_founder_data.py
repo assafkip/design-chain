@@ -27,12 +27,16 @@ TEXT_SUFFIXES = {".py", ".json", ".md", ".sh", ".txt", ".html", ".css", ".js", "
 # Anything that identifies the original author, their business, their clients, their issue
 # tracker or their machine. Extend it when a new identity leaks; never narrow it to pass.
 DENYLIST = [
-    (re.compile(r"assaf(?!kip/design-chain)", re.I), "the author's name"),   # the repo path in the install line is the one allowed use
+    # a public GitHub path (assafkip/<repo>) is an install source, the one allowed use of the handle:
+    # this plugin's own repo, and the marketplace four of the engines come from
+    (re.compile(r"assaf(?!kip/[a-z0-9-]+)", re.I), "the author's name"),
     (re.compile(r"kipnis", re.I), "the author's name"),
     (re.compile(r"askconsulting", re.I), "the author's business"),
     (re.compile(r"ktlyst", re.I), "the author's other business"),
     (re.compile(r"\bASK-\d+\b"), "the author's issue tracker"),
-    (re.compile(r"cole-gtm|kipi-system|kipi-core|kipi-design|q-consult|q-system", re.I), "the author's other repos"),
+    # the private repos and the instance layout; the kipi marketplace itself is public and is
+    # named as an engine source, so "kipi-system" as a marketplace path is not on this list
+    (re.compile(r"cole-gtm|q-consult|q-system", re.I), "the author's other repos"),
     (re.compile(r"/Users/[a-z]"), "a path on the author's machine"),
     (re.compile(r"\b(thaena|norri|prodigy gold|pure spectrum|all points)\b", re.I), "the author's clients"),
 ]

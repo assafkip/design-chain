@@ -14,11 +14,16 @@ the gate will hold a brief to forever. If an answer is thin, say so once and tak
 
 ```bash
 test -f design-chain.json && echo "EXISTS: design-chain.json is already here. Edit the files under design/ instead." || echo "OK"
+python3 "${CLAUDE_PLUGIN_ROOT}/scripts/doctor.py"
 python3 "${CLAUDE_PLUGIN_ROOT}/scripts/init.py" --print-questions
 ```
 
-EXISTS: stop and say so. Otherwise the JSON printed is the question list: `key`, `ask`, `example`,
-and whether the answer is a list (`many`) with a minimum. Ask them in that order.
+EXISTS: stop and say so. Then read the doctor's report to the person before anything else: a
+`NO` runtime line means a round cannot be measured, and no site-lane engine means the build
+step has nothing to call. Name the missing item and where it comes from (the report says), then
+go on with the questions; nothing in init needs them installed yet. The JSON printed last is
+the question list: `key`, `ask`, `example`, and whether the answer is a list (`many`) with a
+minimum. Ask them in that order.
 
 ## The questions, and why each exists
 
