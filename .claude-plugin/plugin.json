@@ -1,0 +1,10 @@
+{
+  "name": "design-chain",
+  "version": "0.1.0",
+  "description": "One design round for a product site, as a gate: vision, owners, brief with verbatim anchors, three directions, craft manifest, build, measure, critique, proof, checks, readers, seal. Nothing is shown before the seal.",
+  "license": "MIT",
+  "repository": "https://github.com/assafkip/design-chain",
+  "commands": "./commands/",
+  "hooks": "./hooks/hooks.json",
+  "skills": "./skills/"
+}

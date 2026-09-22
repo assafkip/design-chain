@@ -1,0 +1,9 @@
+impeccable, by Paul Bakaus. https://github.com/pbakaus/impeccable
+Licensed under the Apache License, Version 2.0 (see LICENSE in this directory).
+
+This directory vendors ONLY scripts/detector/ from impeccable version 3.7.1,
+the anti-pattern detector that design-impeccable-check.py runs. Nothing else
+from the skill is included. File mode needs Node only. URL mode (a real
+browser, computed styles) additionally needs puppeteer, which is not vendored:
+    npm install puppeteer
+run from vendor/impeccable/.

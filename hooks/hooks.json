@@ -1,0 +1,73 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|SendUserFile|Artifact|mcp__playwright__.*|mcp__claude-in-chrome__.*|mcp__plugin_chrome-devtools.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "test -f \"${CLAUDE_PLUGIN_ROOT}/scripts/design-chain-gate.py\" && python3 -I \"${CLAUDE_PLUGIN_ROOT}/scripts/design-chain-gate.py\""
+          }
+        ]
+      },
+      {
+        "matcher": "Skill",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "test -f \"${CLAUDE_PLUGIN_ROOT}/scripts/design-engine-door.py\" && python3 -I \"${CLAUDE_PLUGIN_ROOT}/scripts/design-engine-door.py\""
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit|Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "test -f \"${CLAUDE_PLUGIN_ROOT}/scripts/design-chain-gate.py\" && python3 -I \"${CLAUDE_PLUGIN_ROOT}/scripts/design-chain-gate.py\""
+          }
+        ]
+      },
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "test -f \"${CLAUDE_PLUGIN_ROOT}/hooks/dogfood_gate.py\" && python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/dogfood_gate.py\""
+          }
+        ]
+      },
+      {
+        "matcher": "Skill",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "test -f \"${CLAUDE_PLUGIN_ROOT}/scripts/design-engine-door.py\" && python3 -I \"${CLAUDE_PLUGIN_ROOT}/scripts/design-engine-door.py\""
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if test -f \"${CLAUDE_PLUGIN_ROOT}/scripts/design-chain-gate.py\"; then python3 -I \"${CLAUDE_PLUGIN_ROOT}/scripts/design-chain-gate.py\"; fi"
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if test -f \"${CLAUDE_PLUGIN_ROOT}/scripts/design-chain-gate.py\"; then python3 -I \"${CLAUDE_PLUGIN_ROOT}/scripts/design-chain-gate.py\"; fi"
+          }
+        ]
+      }
+    ]
+  }
+}
