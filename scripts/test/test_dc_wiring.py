@@ -146,11 +146,14 @@ class Wiring(unittest.TestCase):
 
     def test_the_command_has_one_home(self):
         self.assertFalse((ROOT / ".claude" / "commands" / "design-chain.md").exists(),
-                         "the command has one home: commands/design-chain.md")
-        self.assertTrue((ROOT / "commands" / "design-chain.md").is_file())
+                         "the command has one home: commands/round.md")
+        self.assertTrue((ROOT / "commands" / "round.md").is_file())
         manifest = json.loads((ROOT / ".claude-plugin" / "plugin.json").read_text())
         self.assertEqual(manifest.get("hooks"), "./hooks/hooks.json")
-        self.assertEqual(manifest.get("commands"), "./commands/")
+        # commands/ is discovered by convention and namespaced /design-chain:<file>; the manifest
+        # does not list it, and a `commands` key there is not a documented field
+        self.assertNotIn("commands", manifest)
+        self.assertTrue((ROOT / "commands" / "init.md").is_file())
 
 
 if __name__ == "__main__":

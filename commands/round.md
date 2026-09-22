@@ -3,10 +3,10 @@ description: Run one design round through the design chain: vision, owners, brie
 allowed-tools: Bash, Read, Write, Edit, Glob, Grep, Skill, SendUserFile
 ---
 
-Run one design round. Usage: `/design-chain [round]`.
+Run one design round. Usage: `/design-chain:round [round]`.
 
 The project is the nearest `design-chain.json` walking up from the current directory; that file
-was written by `/design-chain-init` and names the owners, the exemplars and the standard. `round`
+was written by `/design-chain:init` and names the owners, the exemplars and the standard. `round`
 defaults to today's date, with a letter suffix if that folder exists (`2026-09-19b`). Nobody has
 to remember round numbers.
 
@@ -22,7 +22,7 @@ for d in [here, *here.parents]:
         except ValueError:
             print(f"UNREADABLE {c}: not valid JSON"); sys.exit(2)
         print(f"{cfg.get('project', d.name)} at {d}"); sys.exit()
-print("NO design-chain.json above", here, "- run /design-chain-init first"); sys.exit(2)
+print("NO design-chain.json above", here, "- run /design-chain:init first"); sys.exit(2)
 EOF
 ```
 
@@ -30,7 +30,7 @@ UNREADABLE or NO: stop and say so.
 
 ## Your first round, if you have never run one
 
-The ten steps below are what one round is. Before the first one, `/design-chain-init` has to have
+The ten steps below are what one round is. Before the first one, `/design-chain:init` has to have
 written `design-chain.json`, `VISION.md`, the owner files and the exemplar captures; the gate
 refuses a round whose inputs are missing and names each one. Read `docs/A-ROUND.md` once: it is
 the same ten steps, one paragraph each, for a first-timer. A green seal means the chain ran, not

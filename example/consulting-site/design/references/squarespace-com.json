@@ -1,0 +1,368 @@
+{
+  "url": "https://squarespace.com",
+  "captured": "2026-09-21",
+  "viewports": {
+    "laptop": {
+      "viewport": "1440x900",
+      "type": {
+        "families": [
+          {
+            "value": "Clarkson",
+            "count": 220
+          }
+        ],
+        "size_ramp": [
+          12,
+          14,
+          15,
+          16,
+          64
+        ],
+        "weights": [
+          {
+            "value": "400",
+            "count": 189
+          },
+          {
+            "value": "500",
+            "count": 29
+          },
+          {
+            "value": "300",
+            "count": 2
+          }
+        ],
+        "display": {
+          "px": 64,
+          "family": "Clarkson",
+          "weight": "300",
+          "tracking": "-3.84px",
+          "leading": "66.5601px",
+          "width_px": 1440,
+          "width_pct": 100,
+          "words": 5,
+          "text": "A website makes it real"
+        }
+      },
+      "color": {
+        "backgrounds": [
+          {
+            "value": "rgba(255, 255, 255, 0.1)",
+            "count": 60
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 3
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 3
+          },
+          {
+            "value": "rgb(50, 50, 50)",
+            "count": 3
+          },
+          {
+            "value": "rgb(26, 26, 26)",
+            "count": 3
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.45)",
+            "count": 1
+          }
+        ],
+        "text": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 165
+          },
+          {
+            "value": "rgb(137, 137, 137)",
+            "count": 47
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 8
+          }
+        ],
+        "gradient_count": 9,
+        "gradient_samples": [
+          "linear-gradient(-45deg, rgb(0, 0, 0) 100%, rgba(255, 255, 255, 0) 100%",
+          "linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 70%, rgb(0, 0, 0"
+        ]
+      },
+      "shape": {
+        "radii": [
+          {
+            "value": 30,
+            "count": 60
+          },
+          {
+            "value": 4,
+            "count": 14
+          },
+          {
+            "value": 8,
+            "count": 10
+          },
+          {
+            "value": 6,
+            "count": 3
+          }
+        ],
+        "shadow_count": 0,
+        "shadow_samples": []
+      },
+      "imagery": {
+        "img": 20,
+        "svg": 4,
+        "video": 5,
+        "canvas": 0,
+        "background_images": 0,
+        "largest_visual_pct": 100,
+        "visual_area_pct": 100,
+        "img_src_sample": [
+          "/site-navigation/2025/solutions/creative-services-1500w.webp",
+          "navigation/2025/solutions/professional-services-1-1500w.webp",
+          "site-navigation/2025/solutions/education-training-1500w.webp"
+        ]
+      },
+      "motion": {
+        "animated": 0,
+        "transitioned": 137
+      },
+      "layout": {
+        "content_measure_px": 312,
+        "buttons_in_fold": 125,
+        "buttons": [
+          {
+            "text": "SKIP TO MAIN CONTENT\n\u2192",
+            "radius": "4px",
+            "bg": "rgb(255, 255, 255)",
+            "color": "rgb(0, 0, 0)",
+            "padding": "24px",
+            "font_px": 14,
+            "weight": "500"
+          },
+          {
+            "text": "",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(0, 0, 0)",
+            "padding": "0px",
+            "font_px": 16,
+            "weight": "400"
+          },
+          {
+            "text": "PRODUCTS",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(0, 0, 0)",
+            "padding": "0px",
+            "font_px": 16,
+            "weight": "400"
+          },
+          {
+            "text": "SOLUTIONS",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(0, 0, 0)",
+            "padding": "0px",
+            "font_px": 16,
+            "weight": "400"
+          },
+          {
+            "text": "RESOURCES",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(0, 0, 0)",
+            "padding": "0px",
+            "font_px": 16,
+            "weight": "400"
+          }
+        ]
+      }
+    },
+    "phone": {
+      "viewport": "390x844",
+      "type": {
+        "families": [
+          {
+            "value": "Clarkson",
+            "count": 177
+          }
+        ],
+        "size_ramp": [
+          12,
+          14,
+          15,
+          16,
+          26,
+          42
+        ],
+        "weights": [
+          {
+            "value": "400",
+            "count": 146
+          },
+          {
+            "value": "500",
+            "count": 26
+          },
+          {
+            "value": "300",
+            "count": 5
+          }
+        ],
+        "display": {
+          "px": 42,
+          "family": "Clarkson",
+          "weight": "300",
+          "tracking": "-2.54439px",
+          "leading": "44.1028px",
+          "width_px": 327,
+          "width_pct": 84,
+          "words": 5,
+          "text": "A website makes it real"
+        }
+      },
+      "color": {
+        "backgrounds": [
+          {
+            "value": "rgba(255, 255, 255, 0.1)",
+            "count": 44
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 8
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 5
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.45)",
+            "count": 1
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.1)",
+            "count": 1
+          }
+        ],
+        "text": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 139
+          },
+          {
+            "value": "rgb(137, 137, 137)",
+            "count": 31
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 6
+          },
+          {
+            "value": "rgb(221, 221, 221)",
+            "count": 1
+          }
+        ],
+        "gradient_count": 6,
+        "gradient_samples": [
+          "linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 70%, rgb(0, 0, 0",
+          "linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%)"
+        ]
+      },
+      "shape": {
+        "radii": [
+          {
+            "value": 30,
+            "count": 44
+          },
+          {
+            "value": 4,
+            "count": 16
+          },
+          {
+            "value": 2,
+            "count": 10
+          }
+        ],
+        "shadow_count": 1,
+        "shadow_samples": [
+          "color(srgb 1 1 1 / 0.2) 0px 0px 0px 2px inset"
+        ]
+      },
+      "imagery": {
+        "img": 20,
+        "svg": 14,
+        "video": 5,
+        "canvas": 0,
+        "background_images": 0,
+        "largest_visual_pct": 71,
+        "visual_area_pct": 100,
+        "img_src_sample": [
+          "s/site-navigation/2025/solutions/creative-services-500w.webp",
+          "-navigation/2025/solutions/professional-services-1-500w.webp",
+          "/site-navigation/2025/solutions/education-training-500w.webp"
+        ]
+      },
+      "motion": {
+        "animated": 3,
+        "transitioned": 110
+      },
+      "layout": {
+        "content_measure_px": 358,
+        "buttons_in_fold": 108,
+        "buttons": [
+          {
+            "text": "SKIP TO MAIN CONTENT\n\u2192",
+            "radius": "4px",
+            "bg": "rgb(255, 255, 255)",
+            "color": "rgb(0, 0, 0)",
+            "padding": "12px",
+            "font_px": 14,
+            "weight": "500"
+          },
+          {
+            "text": "",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(0, 0, 0)",
+            "padding": "0px",
+            "font_px": 16,
+            "weight": "400"
+          },
+          {
+            "text": "",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(0, 0, 0)",
+            "padding": "0px 4px",
+            "font_px": 16,
+            "weight": "400"
+          },
+          {
+            "text": "",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(255, 255, 255)",
+            "padding": "12px 0px",
+            "font_px": 16,
+            "weight": "400"
+          },
+          {
+            "text": "",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(0, 0, 0)",
+            "padding": "0px",
+            "font_px": 16,
+            "weight": "400"
+          }
+        ]
+      }
+    }
+  },
+  "slug": "squarespace-com"
+}

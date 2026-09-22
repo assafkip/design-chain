@@ -1,0 +1,296 @@
+[
+  {
+    "page": "D1-astro-laptop.html",
+    "sha256": "8e2e741548b6205c826e22d8eaa55e43dfbf9c2a8d510a520d037daf1848dccb",
+    "pass": true,
+    "measurements": [
+      {
+        "type_sizes": [
+          15,
+          16,
+          19,
+          76
+        ],
+        "large_elements": 1,
+        "words": 51,
+        "min_body_px": 15,
+        "max_line_chars": 86,
+        "signal_elements": 0,
+        "hero": {
+          "text_align": "center",
+          "offset_pct": 0,
+          "pieces": 1,
+          "words": 16,
+          "lines": 1
+        },
+        "viewport": "1440x900"
+      },
+      {
+        "type_sizes": [
+          15,
+          16,
+          34
+        ],
+        "large_elements": 0,
+        "words": 79,
+        "min_body_px": 15,
+        "max_line_chars": 43,
+        "signal_elements": 0,
+        "hero": {
+          "text_align": "center",
+          "offset_pct": 0,
+          "pieces": 1,
+          "words": 16,
+          "lines": 2
+        },
+        "viewport": "390x844"
+      }
+    ],
+    "failures": {
+      "1440x900": [],
+      "390x844": []
+    },
+    "config": {
+      "max_type_sizes": 5,
+      "max_large_elements": 4,
+      "large_px": 40,
+      "max_words": 80,
+      "min_body_px": 15,
+      "max_line_chars": 90,
+      "signal": "#0066b3",
+      "max_signal_elements": 2,
+      "viewports": [
+        [
+          1440,
+          900
+        ],
+        [
+          390,
+          844
+        ]
+      ],
+      "_source": "q-consult/canonical/site-design.md section 6 (NN/g: no more than 3 type sizes and 2 large elements in a view; Butterick/Bringhurst: 45 to 90 characters a line, body 15 to 25 px); one signal colour meaning the mismatch only (design-dna section 4). max_words is the founder's round-2 verdict ('a block of words') made a number.",
+      "_derived": {
+        "by": "design-standard-from-exemplars.py",
+        "from": [
+          "https://calendly.com",
+          "https://figma.com",
+          "https://notion.com",
+          "https://squarespace.com",
+          "https://stripe.com"
+        ],
+        "errors": {},
+        "notes": [
+          "max_type_sizes: 3 -> 5. Measured under 40px: calendly.com=4, figma.com=3, notion.com=5, squarespace.com=5, stripe.com=3. NN/g's 'no more than 3' is SUPERSEDED by the founder's own exemplars, none of which obeys it.",
+          "max_words: LEFT at 80. Measured in the fold: calendly.com=30, figma.com=19, notion.com=67, squarespace.com=223, stripe.com=39 (median 39). MY ASSUMPTION WAS REFUTED BY THIS MEASUREMENT and the number does not move. I argued that 80 collided with the gap check's floor of 7 controls, because a navigation carries words in. Four of five exemplars sit between 19 and 67 words WITH their navigation, so 80 is not binding and is not what made the round bland. Deriving max() here would let the single wordiest page set the cap, against the founder's own verdict on a block of words.",
+          "max_large_elements: 2 -> 4. Measured: calendly.com=1, figma.com=1, notion.com=2, squarespace.com=2, stripe.com=4.",
+          "min_body_px: LEFT at 15. Measured smallest: calendly.com=12, figma.com=16, notion.com=12, squarespace.com=10, stripe.com=14. NOT lowered to match: Butterick and Bringhurst put body at 15px minimum and the group going smaller is not a reason for this site to.",
+          "max_signal_elements: LEFT at 2. The signal colour means the mismatch and nothing else (design-dna.md section 4), which is this site's idea and not the group's, so the group cannot set it. Distinct BACKGROUND colours are a different axis and are floored by design-gap-check.py."
+        ]
+      },
+      "hero_align": "center",
+      "hero_center_tolerance_pct": 5,
+      "_hero_align_source": "Founder 2026-09-15: left-aligned everything reads as slop (2026-09-15f critique). Founder 2026-09-16 on round 16d: 'the text is again on lined on the left'. Exemplars: squarespace, calendly and notion centre the headline (3 of 5), captures in site/design/references/.",
+      "max_hero_pieces": 2,
+      "max_hero_words": 18,
+      "max_hero_lines": 3,
+      "_hero_block_source": "Founder 2026-09-16: 'the text kind of bunches up in the middle, wrapped, and it looks like a block of text'. Caps are the most any exemplar puts around its headline, measured live the same day by site/design/2026-09-16g/tools/hero_text.py (checks/hero-text-laptop.txt): calendly 2 pieces, 18 words, 3 lines; squarespace 1/7/1; stripe 1 eyebrow of 5 words; notion and figma 0 by the probe. Round 16e measured 4/43/6."
+    }
+  },
+  {
+    "page": "D2-astro-laptop.html",
+    "sha256": "84223448c6ef95630383d4129dc35e1743893a20a96ba213f066e131b78aa5f3",
+    "pass": true,
+    "measurements": [
+      {
+        "type_sizes": [
+          15,
+          16,
+          19,
+          76
+        ],
+        "large_elements": 1,
+        "words": 51,
+        "min_body_px": 15,
+        "max_line_chars": 86,
+        "signal_elements": 0,
+        "hero": {
+          "text_align": "center",
+          "offset_pct": 0,
+          "pieces": 1,
+          "words": 16,
+          "lines": 1
+        },
+        "viewport": "1440x900"
+      },
+      {
+        "type_sizes": [
+          15,
+          16,
+          34
+        ],
+        "large_elements": 0,
+        "words": 79,
+        "min_body_px": 15,
+        "max_line_chars": 43,
+        "signal_elements": 0,
+        "hero": {
+          "text_align": "center",
+          "offset_pct": 0,
+          "pieces": 1,
+          "words": 16,
+          "lines": 2
+        },
+        "viewport": "390x844"
+      }
+    ],
+    "failures": {
+      "1440x900": [],
+      "390x844": []
+    },
+    "config": {
+      "max_type_sizes": 5,
+      "max_large_elements": 4,
+      "large_px": 40,
+      "max_words": 80,
+      "min_body_px": 15,
+      "max_line_chars": 90,
+      "signal": "#0066b3",
+      "max_signal_elements": 2,
+      "viewports": [
+        [
+          1440,
+          900
+        ],
+        [
+          390,
+          844
+        ]
+      ],
+      "_source": "q-consult/canonical/site-design.md section 6 (NN/g: no more than 3 type sizes and 2 large elements in a view; Butterick/Bringhurst: 45 to 90 characters a line, body 15 to 25 px); one signal colour meaning the mismatch only (design-dna section 4). max_words is the founder's round-2 verdict ('a block of words') made a number.",
+      "_derived": {
+        "by": "design-standard-from-exemplars.py",
+        "from": [
+          "https://calendly.com",
+          "https://figma.com",
+          "https://notion.com",
+          "https://squarespace.com",
+          "https://stripe.com"
+        ],
+        "errors": {},
+        "notes": [
+          "max_type_sizes: 3 -> 5. Measured under 40px: calendly.com=4, figma.com=3, notion.com=5, squarespace.com=5, stripe.com=3. NN/g's 'no more than 3' is SUPERSEDED by the founder's own exemplars, none of which obeys it.",
+          "max_words: LEFT at 80. Measured in the fold: calendly.com=30, figma.com=19, notion.com=67, squarespace.com=223, stripe.com=39 (median 39). MY ASSUMPTION WAS REFUTED BY THIS MEASUREMENT and the number does not move. I argued that 80 collided with the gap check's floor of 7 controls, because a navigation carries words in. Four of five exemplars sit between 19 and 67 words WITH their navigation, so 80 is not binding and is not what made the round bland. Deriving max() here would let the single wordiest page set the cap, against the founder's own verdict on a block of words.",
+          "max_large_elements: 2 -> 4. Measured: calendly.com=1, figma.com=1, notion.com=2, squarespace.com=2, stripe.com=4.",
+          "min_body_px: LEFT at 15. Measured smallest: calendly.com=12, figma.com=16, notion.com=12, squarespace.com=10, stripe.com=14. NOT lowered to match: Butterick and Bringhurst put body at 15px minimum and the group going smaller is not a reason for this site to.",
+          "max_signal_elements: LEFT at 2. The signal colour means the mismatch and nothing else (design-dna.md section 4), which is this site's idea and not the group's, so the group cannot set it. Distinct BACKGROUND colours are a different axis and are floored by design-gap-check.py."
+        ]
+      },
+      "hero_align": "center",
+      "hero_center_tolerance_pct": 5,
+      "_hero_align_source": "Founder 2026-09-15: left-aligned everything reads as slop (2026-09-15f critique). Founder 2026-09-16 on round 16d: 'the text is again on lined on the left'. Exemplars: squarespace, calendly and notion centre the headline (3 of 5), captures in site/design/references/.",
+      "max_hero_pieces": 2,
+      "max_hero_words": 18,
+      "max_hero_lines": 3,
+      "_hero_block_source": "Founder 2026-09-16: 'the text kind of bunches up in the middle, wrapped, and it looks like a block of text'. Caps are the most any exemplar puts around its headline, measured live the same day by site/design/2026-09-16g/tools/hero_text.py (checks/hero-text-laptop.txt): calendly 2 pieces, 18 words, 3 lines; squarespace 1/7/1; stripe 1 eyebrow of 5 words; notion and figma 0 by the probe. Round 16e measured 4/43/6."
+    }
+  },
+  {
+    "page": "D3-astro-laptop.html",
+    "sha256": "3b5a9653fdba5cccd54b0d2c0b0172bfc5d5169edb443c095aaca004f351e122",
+    "pass": true,
+    "measurements": [
+      {
+        "type_sizes": [
+          15,
+          16,
+          19,
+          76
+        ],
+        "large_elements": 1,
+        "words": 49,
+        "min_body_px": 15,
+        "max_line_chars": 86,
+        "signal_elements": 0,
+        "hero": {
+          "text_align": "center",
+          "offset_pct": 0,
+          "pieces": 1,
+          "words": 16,
+          "lines": 1
+        },
+        "viewport": "1440x900"
+      },
+      {
+        "type_sizes": [
+          15,
+          16,
+          34
+        ],
+        "large_elements": 0,
+        "words": 77,
+        "min_body_px": 15,
+        "max_line_chars": 43,
+        "signal_elements": 0,
+        "hero": {
+          "text_align": "center",
+          "offset_pct": 0,
+          "pieces": 1,
+          "words": 16,
+          "lines": 2
+        },
+        "viewport": "390x844"
+      }
+    ],
+    "failures": {
+      "1440x900": [],
+      "390x844": []
+    },
+    "config": {
+      "max_type_sizes": 5,
+      "max_large_elements": 4,
+      "large_px": 40,
+      "max_words": 80,
+      "min_body_px": 15,
+      "max_line_chars": 90,
+      "signal": "#0066b3",
+      "max_signal_elements": 2,
+      "viewports": [
+        [
+          1440,
+          900
+        ],
+        [
+          390,
+          844
+        ]
+      ],
+      "_source": "q-consult/canonical/site-design.md section 6 (NN/g: no more than 3 type sizes and 2 large elements in a view; Butterick/Bringhurst: 45 to 90 characters a line, body 15 to 25 px); one signal colour meaning the mismatch only (design-dna section 4). max_words is the founder's round-2 verdict ('a block of words') made a number.",
+      "_derived": {
+        "by": "design-standard-from-exemplars.py",
+        "from": [
+          "https://calendly.com",
+          "https://figma.com",
+          "https://notion.com",
+          "https://squarespace.com",
+          "https://stripe.com"
+        ],
+        "errors": {},
+        "notes": [
+          "max_type_sizes: 3 -> 5. Measured under 40px: calendly.com=4, figma.com=3, notion.com=5, squarespace.com=5, stripe.com=3. NN/g's 'no more than 3' is SUPERSEDED by the founder's own exemplars, none of which obeys it.",
+          "max_words: LEFT at 80. Measured in the fold: calendly.com=30, figma.com=19, notion.com=67, squarespace.com=223, stripe.com=39 (median 39). MY ASSUMPTION WAS REFUTED BY THIS MEASUREMENT and the number does not move. I argued that 80 collided with the gap check's floor of 7 controls, because a navigation carries words in. Four of five exemplars sit between 19 and 67 words WITH their navigation, so 80 is not binding and is not what made the round bland. Deriving max() here would let the single wordiest page set the cap, against the founder's own verdict on a block of words.",
+          "max_large_elements: 2 -> 4. Measured: calendly.com=1, figma.com=1, notion.com=2, squarespace.com=2, stripe.com=4.",
+          "min_body_px: LEFT at 15. Measured smallest: calendly.com=12, figma.com=16, notion.com=12, squarespace.com=10, stripe.com=14. NOT lowered to match: Butterick and Bringhurst put body at 15px minimum and the group going smaller is not a reason for this site to.",
+          "max_signal_elements: LEFT at 2. The signal colour means the mismatch and nothing else (design-dna.md section 4), which is this site's idea and not the group's, so the group cannot set it. Distinct BACKGROUND colours are a different axis and are floored by design-gap-check.py."
+        ]
+      },
+      "hero_align": "center",
+      "hero_center_tolerance_pct": 5,
+      "_hero_align_source": "Founder 2026-09-15: left-aligned everything reads as slop (2026-09-15f critique). Founder 2026-09-16 on round 16d: 'the text is again on lined on the left'. Exemplars: squarespace, calendly and notion centre the headline (3 of 5), captures in site/design/references/.",
+      "max_hero_pieces": 2,
+      "max_hero_words": 18,
+      "max_hero_lines": 3,
+      "_hero_block_source": "Founder 2026-09-16: 'the text kind of bunches up in the middle, wrapped, and it looks like a block of text'. Caps are the most any exemplar puts around its headline, measured live the same day by site/design/2026-09-16g/tools/hero_text.py (checks/hero-text-laptop.txt): calendly 2 pieces, 18 words, 3 lines; squarespace 1/7/1; stripe 1 eyebrow of 5 words; notion and figma 0 by the probe. Round 16e measured 4/43/6."
+    }
+  }
+]

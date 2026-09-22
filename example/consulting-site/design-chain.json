@@ -1,0 +1,169 @@
+{
+ "project": "consulting-site",
+ "_what": "The worked example: a real consulting site's real design-chain config, owners and one sealed round, with client names replaced. Every brief must quote each anchor VERBATIM, read live from the owner files. Paraphrase fails. If an owner file changes, yesterday's brief fails.",
+ "_why": "Founder 2026-09-15: two rounds of first screens ignored the canon; a brief written from memory is how the generic layout returns.",
+ "exemplars_dir": "design/exemplars",
+ "owners": [
+  {
+   "file": "design/owners/the-business.md",
+   "anchors": [
+    "^> \\*\\*A business where somebody is paid to be accurate"
+   ]
+  },
+  {
+   "file": "design/owners/design-dna.md",
+   "anchors": [
+    "^\\*\\*Two records that should agree, and don't\\.\\*\\*",
+    "^1\\. What is the one thing this screen says",
+    "^3\\. Where are the two records",
+    "^4\\. Could this be anyone else's page",
+    "^9\\. What did I choose because it was the default"
+   ]
+  },
+  {
+   "file": "design/owners/site-design.md",
+   "anchors": [
+    "^Craft specs a page is checked against",
+    "is built once per candidate stack"
+   ]
+  },
+  {
+   "file": "design/owners/decisions.md",
+   "anchors": [
+    "RULE-2026-09-15-C \\[USER-DIRECTED\\]:\\*\\* \\*\\*([^*]+)\\*\\*",
+    "RULE-2026-09-15-I \\[CLAUDE-RECOMMENDED -> APPROVED\\]:\\*\\* \\*\\*([^*]+)\\*\\*",
+    "RULE-2026-09-15-J \\[USER-DIRECTED\\]:\\*\\* \\*\\*([^*]+)\\*\\*",
+    "RULE-2026-09-15-K \\[USER-DIRECTED\\]:\\*\\* \\*\\*([^*]+)\\*\\*"
+   ]
+  },
+  {
+   "file": "design/owners/segment-pain-model.json",
+   "_why": "The RUNTIME source of the buyer's pain and the buyer's own words; the-business.md section 'The diagnosis' says this file wins wherever they disagree. Anchors are the core belief and one verified buyer phrase per go-segment, so a brief cannot be written without the founder's research in front of it.",
+   "anchors": [
+    "\"statement\": \"Work arrives through uncontrolled channels\\. A human retypes it",
+    "\"word\": \"(dribble the data in)\"",
+    "\"word\": \"(donating time)\"",
+    "\"word\": \"(entitlements)\""
+   ]
+  }
+ ],
+ "standard": {
+  "_source": "design/owners/site-design.md section 6 (NN/g: no more than 3 type sizes and 2 large elements in a view; Butterick/Bringhurst: 45 to 90 characters a line, body 15 to 25 px); one signal colour meaning the mismatch only (design-dna section 4). max_words is the founder's round-2 verdict ('a block of words') made a number.",
+  "max_type_sizes": 5,
+  "max_large_elements": 4,
+  "large_px": 40,
+  "max_words": 80,
+  "min_body_px": 15,
+  "max_line_chars": 90,
+  "signal": "#0066b3",
+  "max_signal_elements": 2,
+  "viewports": [
+   [
+    1440,
+    900
+   ],
+   [
+    390,
+    844
+   ]
+  ],
+  "_derived": {
+   "by": "design-standard-from-exemplars.py",
+   "from": [
+    "https://calendly.com",
+    "https://figma.com",
+    "https://notion.com",
+    "https://squarespace.com",
+    "https://stripe.com"
+   ],
+   "errors": {},
+   "notes": [
+    "max_type_sizes: 3 -> 5. Measured under 40px: calendly.com=4, figma.com=3, notion.com=5, squarespace.com=5, stripe.com=3. NN/g's 'no more than 3' is SUPERSEDED by the founder's own exemplars, none of which obeys it.",
+    "max_words: LEFT at 80. Measured in the fold: calendly.com=30, figma.com=19, notion.com=67, squarespace.com=223, stripe.com=39 (median 39). MY ASSUMPTION WAS REFUTED BY THIS MEASUREMENT and the number does not move. I argued that 80 collided with the gap check's floor of 7 controls, because a navigation carries words in. Four of five exemplars sit between 19 and 67 words WITH their navigation, so 80 is not binding and is not what made the round bland. Deriving max() here would let the single wordiest page set the cap, against the founder's own verdict on a block of words.",
+    "max_large_elements: 2 -> 4. Measured: calendly.com=1, figma.com=1, notion.com=2, squarespace.com=2, stripe.com=4.",
+    "min_body_px: LEFT at 15. Measured smallest: calendly.com=12, figma.com=16, notion.com=12, squarespace.com=10, stripe.com=14. NOT lowered to match: Butterick and Bringhurst put body at 15px minimum and the group going smaller is not a reason for this site to.",
+    "max_signal_elements: LEFT at 2. The signal colour means the mismatch and nothing else (design-dna.md section 4), which is this site's idea and not the group's, so the group cannot set it. Distinct BACKGROUND colours are a different axis and are floored by design-gap-check.py."
+   ]
+  },
+  "hero_align": "center",
+  "hero_center_tolerance_pct": 5,
+  "_hero_align_source": "Founder 2026-09-15: left-aligned everything reads as slop (2026-09-15f critique). Founder 2026-09-16 on round 16d: 'the text is again on lined on the left'. Exemplars: squarespace, calendly and notion centre the headline (3 of 5), captures in design/references/.",
+  "max_hero_pieces": 2,
+  "max_hero_words": 18,
+  "max_hero_lines": 3,
+  "_hero_block_source": "Founder 2026-09-16: 'the text kind of bunches up in the middle, wrapped, and it looks like a block of text'. Caps are the most any exemplar puts around its headline, measured live the same day by design/rounds/2026-09-16g/tools/hero_text.py (checks/hero-text-laptop.txt): calendly 2 pieces, 18 words, 3 lines; squarespace 1/7/1; stripe 1 eyebrow of 5 words; notion and figma 0 by the probe. Round 16e measured 4/43/6."
+ },
+ "craft": {
+  "_what": "The BAR half of the chain. The `standard` block above is a FLOOR: it measures word count, type sizes and the absence of AI-default tells. It is structurally unable to see craft, and on 2026-09-15 a round passed all of it while shipping three wireframes with zero imagery, zero motion and zero depth.",
+  "_why": "docs/LESSONS.md: a-defect-absence-gate-is-a-floor-not-a-finish-line.md (2026-07-06), distilled from an earlier post-mortem, rca-design-room-skipped-premium-tools-2026-06-25.md. That RCA's four root causes: a floor-detector became the definition of done; grounding enforced provenance, not ambition; the direction was resolved at concept level with no execution tier, so the premium and the floor realization were both compliant; and effort-economy ran downhill to the cheapest passing artifact. All four recurred here.",
+  "tier": "craft",
+  "_tier_meaning": {
+   "wireframe": "Structure and copy only. Legitimate for a COPY test. Never shippable, and never what a first-screen comparison is built at, because the founder cannot judge a direction from a layout (design-dna section 10: 'a sheet of ingredients cannot be judged as a site').",
+   "craft": "The required tier for anything the founder compares or that reaches a visitor. RULE-2026-09-15-E: the site is his calling card as an AI expert, and simple or thin reads as 'he could not do more'. design-dna section 6: restraint applies to noise, never to craft."
+  },
+  "require_craft_manifest": true,
+  "_craft_manifest": "craft-manifest.json in the round directory. Each entry: id, technique, role, reference, import[], applied[]. check_technique_parity.py BLOCKS when a declared technique is absent from the built page. A manifest with no techniques fails: declaring nothing is itself a gap.",
+  "require_impeccable": true,
+  "_impeccable": "checks/impeccable.txt, produced by design-impeccable-check.py over the vendored detector. Run it on the SERVED URL, not the file: URL mode drives a real browser and resolves computed styles. Include a known-slop control in the same file, or the zeros mean nothing.",
+  "min_asset_elements": 1,
+  "min_animated_elements": 1,
+  "_measured_floor": "Measured on the 2026-09-15 round at the moment this block was written: fill 0.87 to 0.96 (fine), assets 0, background-images 0, animated 0 on all three laptop pages. The zeros are the defect. 1 is a floor on a bar-check and is deliberately low; it exists to make a wireframe NON-COMPLIANT, not to define good.",
+  "_not_a_verdict": "Nothing in this block certifies a page is good. Green here means 'not a wireframe'. The founder's eye and five real buyer conversations are the bar (site-design.md section 8).",
+  "require_grounding": "design/references/NARRATIVE.md",
+  "_grounding": "The INPUT half, in two parts. MEASUREMENTS.md is regenerated by design-exemplar-capture.py (real browser, two viewports, nothing recalled). NARRATIVE.md is the human read of the GROUP and is what techniques must cite. Founder 2026-09-15: 'create a design narrative of what are the style elements that define this group... and you should do that every time I put in more exemplars.' The gate holds both halves: a technique citing a page not in the narrative is refused as invention, and an exemplar in exemplars.json missing from the narrative blocks, because a new site changes what the others mean.",
+  "allow_tells": {
+   "violet-accent": "Founder 2026-09-15: 'For now, we can allow the purple and see what it looks like. We don't have to use it.' ON TRIAL, not adopted. Measured: stripe.com's brand colour is rgb(83,58,253), hue 247.0. The fingerprint's violet bucket starts at hue 248 and its electric-blue bucket ends there, so THE PURPLE IS CLASSIFIED AS BLUE, one degree short. Both buckets are allowed here because the founder's decision was about a colour, not about which side of a threshold it fell on. Reported on every scan, never silenced. Delete these two lines to restore the ban.",
+   "electric-blue-accent": "Founder 2026-09-15: 'For now, we can allow the purple and see what it looks like. We don't have to use it.' ON TRIAL, not adopted. Measured: stripe.com's brand colour is rgb(83,58,253), hue 247.0. The fingerprint's violet bucket starts at hue 248 and its electric-blue bucket ends there, so THE PURPLE IS CLASSIFIED AS BLUE, one degree short. Both buckets are allowed here because the founder's decision was about a colour, not about which side of a threshold it fell on. Reported on every scan, never silenced. Delete these two lines to restore the ban."
+  },
+  "require_dispositions": true,
+  "_dispositions": "A weakness the critique named and the round shipped anyway. Measured 2026-09-15 across three sealed rounds: 11 findings marked WEAK in critique.md, 0 required an answer, and two were the exact defects the founder and the reader gate then caught (the before-and-after pair dropped to buy the chrome line; every round being one left-aligned column). Mark a weakness WEAK[tag] and answer it with '- tag: FIXED/DEFERRED/CARRIED <why>'. Sees only that marker: a weakness written in prose is invisible to it, and deciding that a sentence describes a weakness is a judgment no regex makes.",
+  "require_fresh_brief": true,
+  "_fresh_brief": "A brief that is a byte-copy of an earlier round's brief is a round that never read the owners. Measured 2026-09-15: five consecutive rounds carried the identical brief (sha c3b247f7b6), so four did step 1 by copying a file. The anchor check proves the brief CONTAINS the quotes; it cannot tell a written brief from a copied one. Writing it is the act of reading.",
+  "require_gap_check": true,
+  "_gap_check": "checks/gap.json, written by design-gap-check.py. THE DISTANCE CHECK, and the reason it exists: every other mechanical check in this chain finds DEFECTS, and a bland page has none. Measured 2026-09-15, a deliberately bland control page cleared design-standard-check.py, the dogfood_gate tripwire and the impeccable browser detector in one run whose own control fired. Seven rounds drifted the same way while every gate stayed green (RCA rca-design-chain-passes-bland-2026-09-15.md). The floors are the LEAST any exemplar in references/ reaches on each axis, derived from the captures so taste cannot set them, and only on axes where the canon and the measurement agree. Shadows, gradients and stock imagery are deliberately NOT floored because flooring them would fight site-design.md section 7.",
+  "_ban_audit": "site-design.md section 7 was amended 2026-09-16 after every banned tell was tested against all five exemplars by design/references/ban-audit.py. Struck: two side-by-side CTAs, which 4 of 5 do. Narrowed: violet accents, gradient SURFACES and a dark hero, each done by one exemplar that earns it, with gradient-on-TYPE still banned because 0 of 5 do it. Kept against the evidence: three-box rows, on the founder's own stated preference rather than on the fingerprint."
+ },
+ "vision": {
+  "_what": "The stage that comes BEFORE the brief, founder-directed 2026-09-18: the vision in his words, kept as a running notebook, broken into components, each specced and tightened with him, and only then built.",
+  "_why": "On 2026-09-17/18 this chain produced three fully specced, measured, critiqued and SEALED directions that were all wrong. Nothing was skipped. Every brief was assembled from constraints and none said what the page was trying to BE. The gate could see the shape of the work and not that it was aimed at nothing.",
+  "_scope": "It sees presence, verbatim quotation and a review marker. It cannot see whether the vision is good, whether the quoted words are really his, or whether a spec marked reviewed was read. A marker makes skipping deliberate, not impossible.",
+  "file": "design/VISION.md",
+  "specs_dir": "design/specs",
+  "min_founder_quotes": 3,
+  "require_brief_quotes_vision": true
+ },
+ "impeccable": {
+  "canon": [
+   {
+    "rule": "single-font",
+    "finding": "only font used is general sans",
+    "owner": "design/owners/site-design.md",
+    "decision": "AGREED 2026-09-15: the typeface is General Sans"
+   }
+  ]
+ },
+ "rounds_dir": "design/rounds",
+ "readers": {
+  "_what": "Fresh model readers role-play the buyer against the served page. persona_file must be one of the owners; the-business.md describes who is paid to be accurate and what that costs them. labels: what a stranger might think is sold, the right answer first.",
+  "persona_file": "design/owners/the-business.md",
+  "labels": [
+   "custom systems for people who are paid to be accurate",
+   "an AI chatbot agency",
+   "IT services",
+   "a marketing consultancy"
+  ],
+  "n": 3,
+  "floor": 1.0,
+  "viewports": [
+   [
+    1440,
+    900
+   ]
+  ]
+ },
+ "checks": [
+  {
+   "name": "tripwire"
+  }
+ ]
+}

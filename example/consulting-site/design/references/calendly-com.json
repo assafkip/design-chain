@@ -1,0 +1,392 @@
+{
+  "url": "https://calendly.com",
+  "captured": "2026-09-21",
+  "viewports": {
+    "laptop": {
+      "viewport": "1440x900",
+      "type": {
+        "families": [
+          {
+            "value": "Geist",
+            "count": 29
+          },
+          {
+            "value": "Calendly Sans",
+            "count": 1
+          }
+        ],
+        "size_ramp": [
+          12,
+          14,
+          16,
+          18,
+          72
+        ],
+        "weights": [
+          {
+            "value": "500",
+            "count": 21
+          },
+          {
+            "value": "400",
+            "count": 9
+          }
+        ],
+        "display": {
+          "px": 72,
+          "family": "Calendly Sans",
+          "weight": "500",
+          "tracking": "-2px",
+          "leading": "79.2px",
+          "width_px": 640,
+          "width_pct": 44,
+          "words": 3,
+          "text": "Easy scheduling ahead."
+        }
+      },
+      "color": {
+        "backgrounds": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 15
+          },
+          {
+            "value": "rgb(7, 26, 49)",
+            "count": 8
+          },
+          {
+            "value": "rgb(252, 251, 248)",
+            "count": 4
+          },
+          {
+            "value": "rgb(132, 193, 255)",
+            "count": 1
+          },
+          {
+            "value": "rgba(252, 251, 248, 0.4)",
+            "count": 1
+          },
+          {
+            "value": "rgba(252, 251, 248, 0.05)",
+            "count": 1
+          }
+        ],
+        "text": [
+          {
+            "value": "rgb(7, 26, 49)",
+            "count": 16
+          },
+          {
+            "value": "rgb(252, 251, 248)",
+            "count": 7
+          },
+          {
+            "value": "rgb(95, 109, 119)",
+            "count": 6
+          },
+          {
+            "value": "rgb(61, 70, 78)",
+            "count": 1
+          }
+        ],
+        "gradient_count": 0,
+        "gradient_samples": []
+      },
+      "shape": {
+        "radii": [
+          {
+            "value": 16,
+            "count": 25
+          },
+          {
+            "value": 8,
+            "count": 12
+          },
+          {
+            "value": 3,
+            "count": 6
+          },
+          {
+            "value": 20,
+            "count": 4
+          },
+          {
+            "value": 64,
+            "count": 2
+          }
+        ],
+        "shadow_count": 4,
+        "shadow_samples": [
+          "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0",
+          "rgba(71, 103, 136, 0.04) 0px 1px 2px 0px, rgba(71, 103, 136,"
+        ]
+      },
+      "imagery": {
+        "img": 4,
+        "svg": 10,
+        "video": 0,
+        "canvas": 1,
+        "background_images": 1,
+        "largest_visual_pct": 85,
+        "visual_area_pct": 100,
+        "img_src_sample": [
+          "ps://calendly.com/_astro/fallback-hero-gradient.ylUwiRpO.svg",
+          "https://cdn.calendlycms.com/google-logo-mark.png",
+          "https://cdn.calendlycms.com/microsoftLogo.svg"
+        ]
+      },
+      "motion": {
+        "animated": 0,
+        "transitioned": 33
+      },
+      "layout": {
+        "content_measure_px": 560,
+        "buttons_in_fold": 31,
+        "buttons": [
+          {
+            "text": "Introducing the new Calendly",
+            "radius": "0px",
+            "bg": "rgb(132, 193, 255)",
+            "color": "rgb(7, 26, 49)",
+            "padding": "8px 48px 8px 32px",
+            "font_px": 16,
+            "weight": "400"
+          },
+          {
+            "text": "",
+            "radius": "8px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(7, 26, 49)",
+            "padding": "8px",
+            "font_px": 16,
+            "weight": "400"
+          },
+          {
+            "text": "",
+            "radius": "8px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(0, 0, 0)",
+            "padding": "0px",
+            "font_px": 16,
+            "weight": "400"
+          },
+          {
+            "text": "Product",
+            "radius": "16px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(7, 26, 49)",
+            "padding": "8px",
+            "font_px": 14,
+            "weight": "500"
+          },
+          {
+            "text": "Solutions",
+            "radius": "16px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(7, 26, 49)",
+            "padding": "8px",
+            "font_px": 14,
+            "weight": "500"
+          }
+        ]
+      }
+    },
+    "phone": {
+      "viewport": "390x844",
+      "type": {
+        "families": [
+          {
+            "value": "Geist",
+            "count": 70
+          },
+          {
+            "value": "Calendly Sans",
+            "count": 5
+          }
+        ],
+        "size_ramp": [
+          12,
+          14,
+          16,
+          24,
+          40
+        ],
+        "weights": [
+          {
+            "value": "500",
+            "count": 65
+          },
+          {
+            "value": "400",
+            "count": 10
+          }
+        ],
+        "display": {
+          "px": 40,
+          "family": "Calendly Sans",
+          "weight": "500",
+          "tracking": "normal",
+          "leading": "44px",
+          "width_px": 320,
+          "width_pct": 82,
+          "words": 6,
+          "text": "All the work around meetings, handled."
+        }
+      },
+      "color": {
+        "backgrounds": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 8
+          },
+          {
+            "value": "rgb(252, 251, 248)",
+            "count": 6
+          },
+          {
+            "value": "rgb(7, 26, 49)",
+            "count": 6
+          },
+          {
+            "value": "rgba(7, 26, 49, 0.05)",
+            "count": 5
+          },
+          {
+            "value": "rgb(245, 243, 238)",
+            "count": 2
+          },
+          {
+            "value": "rgb(132, 193, 255)",
+            "count": 1
+          }
+        ],
+        "text": [
+          {
+            "value": "rgb(7, 26, 49)",
+            "count": 42
+          },
+          {
+            "value": "rgb(95, 109, 119)",
+            "count": 19
+          },
+          {
+            "value": "rgb(252, 251, 248)",
+            "count": 5
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 5
+          },
+          {
+            "value": "rgb(61, 70, 78)",
+            "count": 4
+          }
+        ],
+        "gradient_count": 2,
+        "gradient_samples": [
+          "linear-gradient(rgb(252, 251, 248), rgba(0, 0, 0, 0))",
+          "linear-gradient(to top, rgb(252, 251, 248), rgba(0, 0, 0, 0))"
+        ]
+      },
+      "shape": {
+        "radii": [
+          {
+            "value": 8,
+            "count": 12
+          },
+          {
+            "value": 24,
+            "count": 5
+          },
+          {
+            "value": 20,
+            "count": 4
+          },
+          {
+            "value": 16,
+            "count": 3
+          },
+          {
+            "value": 64,
+            "count": 2
+          }
+        ],
+        "shadow_count": 2,
+        "shadow_samples": [
+          "rgba(0, 0, 0, 0.06) 0px 1px 6px 0px, rgba(0, 0, 0, 0.16) 0px",
+          "rgba(71, 103, 136, 0.04) 0px 1px 2px 0px, rgba(71, 103, 136,"
+        ]
+      },
+      "imagery": {
+        "img": 4,
+        "svg": 67,
+        "video": 0,
+        "canvas": 0,
+        "background_images": 1,
+        "largest_visual_pct": 28,
+        "visual_area_pct": 66,
+        "img_src_sample": [
+          "https://cdn.calendlycms.com/google-logo-mark.png",
+          "https://cdn.calendlycms.com/microsoftLogo.svg",
+          "//calendly.com/_astro/hero-animation-background.AxdOoA_y.svg"
+        ]
+      },
+      "motion": {
+        "animated": 0,
+        "transitioned": 34
+      },
+      "layout": {
+        "content_measure_px": 320,
+        "buttons_in_fold": 56,
+        "buttons": [
+          {
+            "text": "Introducing the new Calendly",
+            "radius": "0px",
+            "bg": "rgb(132, 193, 255)",
+            "color": "rgb(7, 26, 49)",
+            "padding": "8px 48px 8px 24px",
+            "font_px": 16,
+            "weight": "400"
+          },
+          {
+            "text": "",
+            "radius": "8px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(7, 26, 49)",
+            "padding": "8px",
+            "font_px": 16,
+            "weight": "400"
+          },
+          {
+            "text": "",
+            "radius": "8px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(0, 0, 0)",
+            "padding": "0px",
+            "font_px": 16,
+            "weight": "400"
+          },
+          {
+            "text": "Get started",
+            "radius": "16px",
+            "bg": "rgb(7, 26, 49)",
+            "color": "rgb(252, 251, 248)",
+            "padding": "8px 12px",
+            "font_px": 14,
+            "weight": "500"
+          },
+          {
+            "text": "",
+            "radius": "8px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(0, 0, 0)",
+            "padding": "0px",
+            "font_px": 16,
+            "weight": "400"
+          }
+        ]
+      }
+    }
+  },
+  "slug": "calendly-com"
+}

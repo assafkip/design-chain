@@ -13,7 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 SCRIPTS = ROOT / "scripts"
-DOC = ROOT / "commands" / "design-chain.md"
+DOC = ROOT / "commands" / "round.md"
 
 
 def gate():

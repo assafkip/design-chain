@@ -1,0 +1,89 @@
+<!doctype html>
+<!-- eyeball-gate-skip -->
+<!-- Internal type specimen for the founder, not a page any visitor reaches. It has no
+     call to action ON PURPOSE: adding a button to a font comparison sheet would be
+     decoration, and the tripwire's second tell (no interactive element) is correct about
+     a landing page and wrong about a specimen. Skipped with a reason rather than
+     silenced. -->
+<html lang="en"><head><meta charset="utf-8"><title>Free type candidates</title>
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&f[]=switzer@300,400,500,700&f[]=general-sans@300,400,500,700&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;700&family=Archivo:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#f6f6f6;color:#14161a;font-family:Satoshi,Helvetica,Arial,sans-serif;
+  font-size:16px;line-height:1.45;padding:44px 56px}
+.note{font-size:14px;color:#5d6470;max-width:74ch;margin-bottom:34px;line-height:1.5}
+.note b{color:#14161a}
+.spec{border-top:1px solid #dcdcd6;padding:26px 0 30px}
+.name{font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:#5d6470;
+  margin-bottom:14px}
+.name span{text-transform:none;letter-spacing:0;color:#9aa0aa}
+h1{font-size:76px;font-weight:450;letter-spacing:-0.045em;line-height:1.02}
+h1 .sh{color:#5d6470}
+.row{display:flex;gap:46px;align-items:baseline;margin-top:16px;flex-wrap:wrap}
+.body{font-size:16px;max-width:52ch;color:#14161a}
+.figs{font-size:34px;font-weight:500;letter-spacing:-0.02em;font-variant-numeric:tabular-nums}
+.figs em{font-style:normal;color:#0066b3}
+.small{font-size:15px;color:#5d6470}
+.satoshi{font-family:Satoshi,sans-serif}
+.switzer{font-family:Switzer,sans-serif}
+.general{font-family:'General Sans',sans-serif}
+.public{font-family:'Public Sans',sans-serif}
+.archivo{font-family:Archivo,sans-serif}
+</style></head>
+<body>
+<p class="note"><b>Free candidates, on your own copy and your own numbers.</b>
+Set at the sizes the next build uses: display 76px at weight 450 with -0.045em tracking,
+body 16px, figures 34px tabular. Every artifact on this site is a count, so the numerals
+matter more here than they would on a font website. Satoshi, Switzer and General Sans are
+Indian Type Foundry, free for commercial use, loaded from Fontshare's CDN. Archivo and
+Public Sans are open and on Google Fonts. None of the five is on our tripwire's
+converged-font list. The paid reference is Söhne, which Stripe uses.</p>
+
+<div class="spec satoshi">
+  <p class="name">Satoshi <span>— Indian Type Foundry, free. Most often named as the free stand-in for Söhne.</span></p>
+  <h1>The work happened.<br><span class="sh">The record didn't.</span></h1>
+  <div class="row">
+    <p class="figs">441 &nbsp;388 &nbsp;<em>53</em></p>
+    <p class="body">A row cap hid them. One run read past it and 53 real sales came back.</p>
+  </div>
+</div>
+
+<div class="spec switzer">
+  <p class="name">Switzer <span>— Indian Type Foundry, free. Swiss neo-grotesque, the Helvetica lineage Söhne also comes from.</span></p>
+  <h1>The work happened.<br><span class="sh">The record didn't.</span></h1>
+  <div class="row">
+    <p class="figs">441 &nbsp;388 &nbsp;<em>53</em></p>
+    <p class="body">A row cap hid them. One run read past it and 53 real sales came back.</p>
+  </div>
+</div>
+
+<div class="spec general">
+  <p class="name">General Sans <span>— Indian Type Foundry, free. Slightly warmer, less strictly Swiss.</span></p>
+  <h1>The work happened.<br><span class="sh">The record didn't.</span></h1>
+  <div class="row">
+    <p class="figs">441 &nbsp;388 &nbsp;<em>53</em></p>
+    <p class="body">A row cap hid them. One run read past it and 53 real sales came back.</p>
+  </div>
+</div>
+
+<div class="spec archivo">
+  <p class="name">Archivo <span>— Omnibus Type, open. A grotesque built for print and screen, wider and sturdier.</span></p>
+  <h1>The work happened.<br><span class="sh">The record didn't.</span></h1>
+  <div class="row">
+    <p class="figs">441 &nbsp;388 &nbsp;<em>53</em></p>
+    <p class="body">A row cap hid them. One run read past it and 53 real sales came back.</p>
+  </div>
+</div>
+
+<div class="spec public">
+  <p class="name">Public Sans <span>— what every round so far shipped on. Here as the baseline, not as a candidate.</span></p>
+  <h1>The work happened.<br><span class="sh">The record didn't.</span></h1>
+  <div class="row">
+    <p class="figs">441 &nbsp;388 &nbsp;<em>53</em></p>
+    <p class="body">A row cap hid them. One run read past it and 53 real sales came back.</p>
+  </div>
+</div>
+</body></html>

@@ -1,0 +1,14 @@
+This directory holds the exemplar research and the tools that read it, not design rounds.
+
+What lives here: the captured exemplar JSON, MEASUREMENTS.md (regenerated, never
+hand-edited), NARRATIVE.md (the human read of the group), exemplars.json (the roster),
+_dropped/ (captures excluded on purpose, with the reason in the roster), and
+type-specimen.html, which sets the same headline in five free faces so the founder can
+compare them on his own copy.
+
+type-specimen.html can never satisfy the design chain and should not try: it has no brief,
+no three directions, no buyer to comprehend it and no artifact to prove. It is a ruler, not
+a page.
+
+A round lives in site/design/<date>/ and is recognised by holding brief.md. This marker is
+refused in any directory that does, so it cannot be used to switch the chain off.

@@ -67,7 +67,7 @@ class OneDoorMenu(unittest.TestCase):
             self.assertIn(e["lane"], ("site", "brand", "deck", "motion"), e)
 
     def test_the_command_doc_names_the_door(self):
-        text = (ROOT / "commands" / "design-chain.md").read_text()
+        text = (ROOT / "commands" / "round.md").read_text()
         self.assertIn("design-engine-door.py", text)
 
 

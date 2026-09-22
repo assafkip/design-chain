@@ -1,0 +1,303 @@
+{
+  "_exemplars": [
+    "calendly-com",
+    "figma-com",
+    "notion-com",
+    "squarespace-com",
+    "stripe-com"
+  ],
+  "_floors": {
+    "background_colours": {
+      "label": "distinct background colours",
+      "floored": true,
+      "derived": true,
+      "why": "NARRATIVE.md section 3, measured and then ignored by the build: 'Depth comes from colour fields and layering, not from drop shadows.' The canon and the group agree, and the round that triggered the RCA had zero.",
+      "floor": 3,
+      "ceiling": null,
+      "median": 6,
+      "range": [
+        3,
+        6
+      ]
+    },
+    "responds_per_control": {
+      "label": "transitions per interactive control",
+      "floored": true,
+      "derived": true,
+      "why": "NARRATIVE.md section 5: the group barely animates and responds richly to the pointer. The property is that CONTROLS RESPOND, and it holds tightly across the set: figma 0.95, notion 1.12, squarespace 1.15, calendly 1.58, stripe 5.15 transitions per control. A ratio transfers to a site of any size; an absolute count is a measure of how big somebody's navigation is.",
+      "floor": 0.95,
+      "ceiling": null,
+      "median": 1.12,
+      "range": [
+        0.95,
+        5.0
+      ]
+    },
+    "transitioned": {
+      "label": "elements that respond to the pointer",
+      "floored": false,
+      "derived": false,
+      "why": "NOT FLOORED, and this floor was REMOVED AFTER IT FAILED A PAGE, which is the suspicious direction to move a bar, so the argument is here in full. It was floored at 18, the least any exemplar reaches. Round 2026-09-15g measured 12 with a full header nav, a three-row artifact that responds and two buttons. Looking at the set next to the control count showed what the number actually tracks: transitions run 0.95 to 5.15 PER CONTROL across all five, so 18 was measuring the size of a product company's navigation and not whether anything responds. The property is kept as the ratio axis above, where round g measures 1.71 and sits above three of the five. The founder can overrule this by setting floored back to True.",
+      "floor": null,
+      "ceiling": null,
+      "median": 36,
+      "range": [
+        18,
+        215
+      ]
+    },
+    "svg": {
+      "label": "svg elements in the fold",
+      "floored": false,
+      "derived": false,
+      "why": "UNFLOORED 2026-09-16, and it is a RETIREMENT rather than a loosening. It was floored at 5 as a stand-in for 'the fold carries real visual work'. It never measured that: round g satisfied it with a logo, three bars and an arrow, and round 2026-09-16 draws its record in CSS and scores 1 while carrying MORE visual weight, not less. A count of elements was always a proxy. The property it stood for is now measured directly by ink_non_background and ink_chromatic, from the screenshot, where it cannot be gamed by splitting one drawing into five tags or beaten by drawing without tags. Kept and reported because the number is worth reading, never as a bar.",
+      "floor": null,
+      "ceiling": null,
+      "median": 10,
+      "range": [
+        5,
+        47
+      ]
+    },
+    "radii": {
+      "label": "distinct corner radii",
+      "floored": true,
+      "derived": true,
+      "why": "NARRATIVE.md section 6: the group has two radius tiers, small for controls and fully round for chips, with no 12px middle. Two tiers needs two radii.",
+      "floor": 3,
+      "ceiling": null,
+      "median": 5,
+      "range": [
+        3,
+        5
+      ]
+    },
+    "controls": {
+      "label": "interactive controls in the fold",
+      "floored": true,
+      "derived": false,
+      "why": "FLOORED ON PRESENCE, NOT ON THE DERIVED COUNT, and this was also loosened after it failed a page. The derived fact that transfers is that 5 of 5 exemplars carry NAVIGATION in the fold; round f carried one button, no nav, no logo and no footer, and read as a slide. The derived COUNT does not transfer: the exemplars run 19 to 127 controls because they are product companies with menus, and a two-person consulting page with 19 controls in its first screen would contradict RULE-2026-09-15-H directly, which says the visitor must understand the offer at once and not play with the page. So the floor is PRESENCE_FLOOR below, the smallest number that constitutes a navigation plus an action, and it is a judgement stated out loud rather than a number derived from a set that does not apply.",
+      "floor": 5,
+      "ceiling": null,
+      "median": 32,
+      "range": [
+        19,
+        127
+      ]
+    },
+    "type_sizes": {
+      "label": "type sizes in the fold",
+      "floored": true,
+      "derived": true,
+      "why": "design-chain.json `standard` capped this at 3 while the group runs 4 to 7. That contradiction is the RCA's most actionable cause. The cap is regenerated from these same captures by design-standard-from-exemplars.py so the two agree.",
+      "floor": 4,
+      "ceiling": null,
+      "median": 5,
+      "range": [
+        4,
+        7
+      ]
+    },
+    "display_words": {
+      "label": "words in the display line",
+      "floored": false,
+      "derived": false,
+      "why": "UNFLOORED 2026-09-16 ON A CORRECTED MEASUREMENT, and the correction is the point. This axis was floored as a 3-to-6 range on the claim that round g's 16-word display line was three times the longest in the group. That claim was FALSE. The probe counted only the first text node of each headline. Counting the whole run of text set at the display size shows stripe at 22 words: its dark sentence and the blue-grey continuation are both 48px, split by colour, not by size. The group therefore runs 3 to 22, and a range that wide disciplines nothing, so it is reported and not enforced. What stripe proves is that a long display line can work WHEN it sits against a large coloured surface (its ribbon takes 74% of the fold). Round g did not fail on word count; it failed on ink_chromatic, at 0 against a floor of 3, and that axis caught it.",
+      "floor": null,
+      "ceiling": null,
+      "median": 5,
+      "range": [
+        3,
+        22
+      ]
+    },
+    "largest_visual_pct": {
+      "label": "share of the fold given to its largest visual object",
+      "floored": false,
+      "derived": false,
+      "why": "MEASURED, NOT FLOORED, AND SUPERSEDED. This was the third attempt at the property and all three failed: a COUNT of visual elements was gamed by a logo and three bars; this AREA version read figma at 0% against its own screenshot; and walking shadow roots left figma at 0% while moving calendly from 85% to 28% on an unchanged page. An instrument whose answer moves 3x when you change how you walk the tree is not measuring the page. The property now lives in ink_non_background and ink_chromatic, measured from the screenshot, where it is stable and does not care how the page painted. Kept and reported because the DOM numbers are still worth reading next to the pixel ones, never as a bar.",
+      "floor": null,
+      "ceiling": null,
+      "median": 74,
+      "range": [
+        0,
+        95
+      ]
+    },
+    "visual_area_pct": {
+      "label": "share of the fold covered by visuals in total",
+      "floored": false,
+      "derived": false,
+      "why": "MEASURED, NOT FLOORED, same instrument fault as largest_visual_pct. Reads calendly 100%, squarespace 100%, stripe 100%, notion 66%, figma 0%.",
+      "floor": null,
+      "ceiling": null,
+      "median": 100,
+      "range": [
+        0,
+        100
+      ]
+    },
+    "ink_non_background": {
+      "label": "share of the fold that is not the page's own background",
+      "floored": true,
+      "derived": true,
+      "why": "MEASURED FROM THE SCREENSHOT, not the DOM, after three DOM attempts failed (see ink_for). Across the set: squarespace 89, calendly 72, figma 37, stripe 31, notion 10. Our grey rounds read 4 to 6. This is the axis that says a fold is mostly empty paper, and it is the honest replacement for the svg COUNT floor that a logo and three bars satisfied.",
+      "floor": 10,
+      "ceiling": null,
+      "median": 37,
+      "range": [
+        10,
+        89
+      ]
+    },
+    "ink_chromatic": {
+      "label": "share of the fold carrying real colour",
+      "floored": true,
+      "derived": true,
+      "why": "Dark text on light paper is not colour, so this counts only pixels with real chroma. Across the set: calendly 67, squarespace 48, stripe 29, figma 16, notion 3. Round f and round g's grey variant both read ZERO, which is the number behind the founder's word for them. NARRATIVE.md section 3 said it first and the build ignored it: 'Depth comes from colour fields and layering.'",
+      "floor": 3,
+      "ceiling": null,
+      "median": 29,
+      "range": [
+        3,
+        67
+      ]
+    },
+    "images": {
+      "label": "images in the fold",
+      "floored": false,
+      "derived": false,
+      "why": "NOT FLOORED. design-dna.md section 4 bans stock imagery and allows only real records recreated and anonymized. squarespace's 20 images are its product; demanding a count here would push the build toward exactly the stock filler the canon forbids.",
+      "floor": null,
+      "ceiling": null,
+      "median": 4,
+      "range": [
+        0,
+        20
+      ]
+    },
+    "shadows": {
+      "label": "shadows",
+      "floored": false,
+      "derived": false,
+      "why": "NOT FLOORED. NARRATIVE.md section 3 measured the group as essentially flat and site-design.md section 7 treats shadow-heavy depth as a tell. Flooring this would fight the canon.",
+      "floor": null,
+      "ceiling": null,
+      "median": 2,
+      "range": [
+        0,
+        4
+      ]
+    },
+    "gradients": {
+      "label": "gradients",
+      "floored": false,
+      "derived": false,
+      "why": "NOT FLOORED. site-design.md section 7 bans gradient-on-type and the palette question is an open founder decision in OPEN-DECISIONS.md.",
+      "floor": null,
+      "ceiling": null,
+      "median": 0,
+      "range": [
+        0,
+        9
+      ]
+    },
+    "video": {
+      "label": "video elements",
+      "floored": false,
+      "derived": false,
+      "why": "NOT FLOORED. Three of five exemplars have zero, so the set does not support a floor.",
+      "floor": null,
+      "ceiling": null,
+      "median": 0,
+      "range": [
+        0,
+        5
+      ]
+    },
+    "display_px": {
+      "label": "display size in px",
+      "floored": false,
+      "derived": false,
+      "why": "NOT FLOORED here because design-chain.json `standard` already governs large elements and a round may legitimately carry no display line at all (round 2026-09-15f's Exhibit direction, founder-directed: 'Why do we have to have the heading at all').",
+      "floor": null,
+      "ceiling": null,
+      "median": 64,
+      "range": [
+        48,
+        96
+      ]
+    }
+  },
+  "pages": {
+    "D1-astro-laptop.html": {
+      "sha256": "8e2e741548b6205c826e22d8eaa55e43dfbf9c2a8d510a520d037daf1848dccb",
+      "axes": {
+        "background_colours": 3,
+        "responds_per_control": 1.0,
+        "transitioned": 10,
+        "svg": 2,
+        "radii": 3,
+        "controls": 10,
+        "type_sizes": 4,
+        "display_words": 5,
+        "largest_visual_pct": 69,
+        "visual_area_pct": 69,
+        "ink_non_background": 68,
+        "ink_chromatic": 68,
+        "images": 0,
+        "shadows": 0,
+        "gradients": 1,
+        "video": 0,
+        "display_px": 76
+      },
+      "below_floor": []
+    },
+    "D2-astro-laptop.html": {
+      "sha256": "84223448c6ef95630383d4129dc35e1743893a20a96ba213f066e131b78aa5f3",
+      "axes": {
+        "background_colours": 3,
+        "responds_per_control": 1.0,
+        "transitioned": 10,
+        "svg": 2,
+        "radii": 3,
+        "controls": 10,
+        "type_sizes": 4,
+        "display_words": 5,
+        "largest_visual_pct": 70,
+        "visual_area_pct": 70,
+        "ink_non_background": 69,
+        "ink_chromatic": 69,
+        "images": 0,
+        "shadows": 0,
+        "gradients": 1,
+        "video": 0,
+        "display_px": 76
+      },
+      "below_floor": []
+    },
+    "D3-astro-laptop.html": {
+      "sha256": "3b5a9653fdba5cccd54b0d2c0b0172bfc5d5169edb443c095aaca004f351e122",
+      "axes": {
+        "background_colours": 3,
+        "responds_per_control": 1.0,
+        "transitioned": 10,
+        "svg": 2,
+        "radii": 3,
+        "controls": 10,
+        "type_sizes": 4,
+        "display_words": 5,
+        "largest_visual_pct": 69,
+        "visual_area_pct": 69,
+        "ink_non_background": 68,
+        "ink_chromatic": 68,
+        "images": 0,
+        "shadows": 0,
+        "gradients": 1,
+        "video": 0,
+        "display_px": 76
+      },
+      "below_floor": []
+    }
+  }
+}

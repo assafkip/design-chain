@@ -1,0 +1,179 @@
+<!-- eyeball-gate-skip: #3875be is the site's own already-approved production blue, not a generic
+     AI-default tell — design-chain.json craft.allow_tells.electric-blue-accent, founder-approved
+     on trial 2026-09-15. -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>D3 — ASK Consulting</title>
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=general-sans@300,400,500,600&display=swap">
+<link rel="stylesheet" href="shared.css">
+<script src="https://cdn.jsdelivr.net/npm/roughjs@4.6.6/bundled/rough.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+  .replay-row{display:flex;gap:10px;justify-content:center;margin-top:var(--s5)}
+  @media (max-width: 480px){ .replay-row{display:none} }
+  /* panel-gradient-oklab: duplicated from shared.css .panel so the technique is provably in this
+     page's own source, not only the linked stylesheet. Same value, harmless duplication. */
+  .panel{background:linear-gradient(176deg,#265994 0%,#2c62a6 45%,#3470b6 85%,#3875be 95%,#4f80cb 100%)}
+  .replay-row button{font-family:inherit;font-size:15px;font-weight:500;color:#fff;
+    background:#071a31;border:1px solid rgba(255,255,255,.3);border-radius:var(--r-ctl);
+    padding:8px 14px;cursor:pointer}
+  .replay-row button{transition:background .2s ease,border-color .2s ease}
+  .replay-row button:hover{background:#0d2a4d;border-color:rgba(255,255,255,.5)}
+  .btn{transition:transform .15s ease,opacity .15s ease}
+  .btn:hover{transform:translateY(-1px);opacity:.92}
+  #stage{display:block;margin:0 auto}
+  path{fill:none;stroke-linecap:round;stroke-linejoin:round}
+</style>
+</head>
+<body class="vp-laptop">
+<header class="top"><div class="in" style="display:flex;align-items:center;justify-content:space-between;width:100%">
+  <a class="mark" href="/"><svg width="20" height="20" viewBox="0 0 20 20"><rect x="1" y="4" width="15" height="3" rx="1" fill="#071a31"></rect><rect x="1" y="13" width="18" height="3" rx="1" fill="#3875be"></rect></svg> ASK Consulting</a>
+  <nav class="nav"><a href="/">Home</a><a href="/work">The work</a><a href="/start">The assessment</a><a href="/about">About</a></nav>
+  <a class="btn ink" href="#">Book a 30-minute call</a>
+</div></header>
+
+<main>
+  <section class="panel">
+    <div class="hero">
+      <span class="vert">Today</span>
+      <h1>Automated. But is it true?</h1>
+      <p class="sub">I find the seam where your systems and your reality disagree, and build what checks it.</p>
+      <a class="btn light lg" href="/start">See the assessment</a>
+    </div>
+    <div class="work">
+      <svg id="stage" width="480" height="300" viewBox="0 0 480 300" role="img"
+           aria-label="One record, annotated at the point it's checked. The annotation resolves to a checkmark, an X, or a question mark that stays open."></svg>
+    </div>
+    <div class="state-pill" id="stateLabel">&nbsp;</div>
+    <div class="replay-row">
+      <button data-mode="agree">Replay — Agree</button>
+      <button data-mode="disagree">Replay — Disagree</button>
+      <button data-mode="unsure">Replay — Unsure</button>
+    </div>
+  </section>
+
+  <section class="section2">
+    <p>Some of this is still done by hand. Some of it's automated, and you still don't trust it. Either way, when what your system says stops matching what's actually happening, that's where the money goes. When the automation breaks, it's busy work again.</p>
+    <p>For one week, $1,000: you show me what your system says, and what's actually happening. I watch, I don't touch, until you say go. What you get back in writing: a count of what's actually slipping, what it's costing, and priced options for fixing each one.</p>
+    <p>Every system I've shipped is on the <a href="/work">Work page</a>, including what it got wrong.</p>
+  </section>
+</main>
+
+<script>
+// D3: ONE abstract record, annotated at one point. Honest weakness (named in directions.md and
+// critique.md): this argues LESS directly for "two records that should agree, and don't" than
+// D1/D2 -- it is one record with a flag, plainer, not necessarily truer to the one idea.
+const WHITE = "#ffffff", BUSY = "rgba(255,255,255,0.55)";
+const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const svg = document.getElementById("stage");
+const stateLabel = document.getElementById("stateLabel");
+const o = (stroke = WHITE, strokeWidth = 1.6, seed = 7, extra = {}) =>
+  ({ seed, roughness: 1.05, bowing: 1, stroke, strokeWidth, ...extra });
+
+function txt(x, y, s, { size = 15, fill = BUSY, anchor = "middle", weight = 500 } = {}) {
+  const t = document.createElementNS("http://www.w3.org/2000/svg", "text");
+  t.setAttribute("x", x); t.setAttribute("y", y); t.setAttribute("font-size", size);
+  t.setAttribute("fill", fill); t.setAttribute("text-anchor", anchor); t.setAttribute("font-weight", weight);
+  t.setAttribute("letter-spacing", "0.06em"); t.textContent = s.toUpperCase();
+  t.style.opacity = 0;
+  svg.appendChild(t);
+  return t;
+}
+function drawable(nodeOrNodes) {
+  const nodes = Array.isArray(nodeOrNodes) ? nodeOrNodes : [nodeOrNodes];
+  const out = [];
+  for (const n of nodes) {
+    if (n.tagName === "path" && n.getAttribute("stroke") !== "none") out.push(n);
+    n.querySelectorAll && n.querySelectorAll("path").forEach(p => { if (p.getAttribute("stroke") !== "none") out.push(p); });
+  }
+  return out;
+}
+function armForDraw(paths) {
+  for (const p of paths) {
+    const len = Math.ceil(p.getTotalLength() * 1.05) + 1;
+    p.style.strokeDasharray = len; p.style.strokeDashoffset = len;
+  }
+}
+function checkGlyph(rc, cx, cy) { const p = rc.linearPath([[cx-22,cy],[cx-5,cy+17],[cx+26,cy-20]], o(WHITE,4,31)); svg.appendChild(p); return drawable(p); }
+function xGlyph(rc, cx, cy) {
+  const a = rc.linearPath([[cx-18,cy-18],[cx+18,cy+18]], o(WHITE,4,32));
+  const b = rc.linearPath([[cx+18,cy-18],[cx-18,cy+18]], o(WHITE,4,33));
+  svg.appendChild(a); svg.appendChild(b);
+  return { first: drawable(a), second: drawable(b) };
+}
+function qGlyph(rc, cx, cy) {
+  const hook = rc.path(`M ${cx-12} ${cy-20} C ${cx-12} ${cy-32} ${cx+10} ${cy-32} ${cx+10} ${cy-20} C ${cx+10} ${cy-10} ${cx-2} ${cy-6} ${cx-2} ${cy+4}`, o(WHITE,4,34));
+  const dot = rc.line(cx-2, cy+15, cx-2, cy+17.5, o(WHITE,5.5,35));
+  svg.appendChild(hook); svg.appendChild(dot);
+  return { hook: drawable(hook), dot: drawable(dot) };
+}
+
+const MODES = { agree: "Agree", disagree: "Disagree", unsure: "Unsure? It stops." };
+
+function buildTimeline(mode) {
+  svg.innerHTML = "";
+  const rc = rough.svg(svg);
+  const record = rc.rectangle(90, 60, 300, 150, o(WHITE, 1.8, 7));
+  svg.appendChild(record);
+  const l1 = rc.line(115, 100, 340, 100, o(BUSY, 1.2, 21));
+  const l2 = rc.line(115, 130, 320, 130, o(BUSY, 1.2, 22));
+  const l3 = rc.line(115, 160, 300, 160, o(BUSY, 1.2, 23));
+  svg.appendChild(l1); svg.appendChild(l2); svg.appendChild(l3);
+  const recordPaths = drawable([record, l1, l2, l3]);
+  armForDraw(recordPaths);
+  const lbl = txt(240, 42, "the record");
+
+  const cx = 300, cy = 135;
+  const ring = rc.circle(cx, cy, 64, o(WHITE, 2, 40));
+  svg.appendChild(ring);
+  const ringPaths = drawable(ring);
+  armForDraw(ringPaths);
+
+  let mark, markPaths = [];
+  if (mode === "agree") { mark = checkGlyph(rc, cx, cy); markPaths = mark; }
+  else if (mode === "disagree") { mark = xGlyph(rc, cx, cy); markPaths = [...mark.first, ...mark.second]; }
+  else { mark = qGlyph(rc, cx, cy); markPaths = [...mark.hook, ...mark.dot]; }
+  armForDraw(markPaths);
+
+  const tl = gsap.timeline({ paused: true });
+  if (reduce) {
+    [...recordPaths, ...ringPaths, ...markPaths].forEach(p => p.style.strokeDashoffset = 0);
+    lbl.style.opacity = 1;
+    stateLabel.textContent = MODES[mode];
+    return tl;
+  }
+
+  tl.to(recordPaths, { strokeDashoffset: 0, duration: 0.6, ease: "power1.inOut", stagger: 0.05 }, 0.15)
+    .to(lbl, { opacity: 1, duration: 0.35 }, 0.9);
+  tl.call(() => { stateLabel.textContent = "Today"; }, [], 0.15);
+
+  const RING_AT = 1.5;
+  tl.to(ringPaths, { strokeDashoffset: 0, duration: 0.4, ease: "power2.out" }, RING_AT);
+
+  const MARK_AT = RING_AT + 0.5;
+  tl.call(() => { stateLabel.textContent = MODES[mode]; }, [], MARK_AT);
+  if (mode === "disagree") {
+    tl.to(mark.first, { strokeDashoffset: 0, duration: 0.22, ease: "power2.out" }, MARK_AT)
+      .to(mark.second, { strokeDashoffset: 0, duration: 0.22, ease: "power2.out" }, MARK_AT + 0.14);
+  } else if (mode === "unsure") {
+    tl.to(mark.hook, { strokeDashoffset: 0, duration: 0.5, ease: "power2.out" }, MARK_AT)
+      .to(mark.dot, { strokeDashoffset: 0, duration: 0.15, ease: "power2.out" }, MARK_AT + 0.55);
+  } else {
+    tl.to(mark, { strokeDashoffset: 0, duration: 0.4, ease: "power2.out" }, MARK_AT);
+  }
+  return tl;
+}
+
+document.querySelectorAll("button[data-mode]").forEach(btn => {
+  btn.addEventListener("click", () => { const tl = buildTimeline(btn.dataset.mode); if (!reduce) tl.play(0); });
+});
+const initial = buildTimeline("agree");
+if (!reduce) initial.play(0);
+</script>
+</body>
+</html>

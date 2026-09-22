@@ -1,0 +1,12 @@
+dogfood_gate.py run against D1, D2, D3 (plugins/kipi-design/hooks/dogfood_gate.py, the repo copy;
+the live-loaded plugin cache copy is blocked from execution by claude-path-write-guard, which
+refuses any .claude/ re-entry regardless of intent).
+
+All three: exit 0, no tells printed.
+
+Verified this is a real pass, not the documented silent-skip case (design-auto-invoke.md,
+ASK-1746, exit 0 on both pass and skip): checked `is_public_facing_page()`'s INTERNAL_PATH_MARKERS
+list against this round's path, `site/design/2026-09-18/*.html`. None of the markers
+(/q-system/, /output/, /build/, /dist/, dashboard, schedule, morning, -log, fixture, debug,
+storybook, /fingerprint/, _harvest, /templates/, /test) match. The gate treated these pages as
+public-facing and actually ran the check.

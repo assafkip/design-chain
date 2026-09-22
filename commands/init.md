@@ -3,7 +3,7 @@ description: Set up a project for the design chain by asking, one question at a 
 allowed-tools: Bash, Read, Write, Glob
 ---
 
-Set up the design chain for the project in the current directory. Usage: `/design-chain-init`.
+Set up the design chain for the project in the current directory. Usage: `/design-chain:init`.
 
 This is a conversation, not a form. Ask ONE question at a time, in the order below, show the
 example answer with it, and wait. Do not answer for the person: the vision is theirs in their

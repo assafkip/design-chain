@@ -1,0 +1,359 @@
+{
+  "_what_this_is": "The segment pain model, as DATA the generator reads at run time. Never prose in a doc, never instructions in a prompt. Reason, measured 2026-08-28: a session that had read the Aug-24 research more closely than anything else still re-derived all three Go-segment offer lines and got all three wrong. If this lives in a prompt, every run re-derives it and drifts. If it lives here, run two cannot differ from run one, and refreshing the research changes the generator without anyone editing a prompt.",
+  "_source": "customer-pain-and-targeting-findings-2026-08-24.docx (segment verdicts, pain, openers, objections) and q-consult/gtm/targets/03-cold-email-brief-santa-clara-2026-08-28.md (per-company cards). Both are upstream. Edit those first, then this.",
+  "_version": "2",
+  "_as_of": "2026-08-28",
+  "universal": {
+    "only_public_price": "$1,000",
+    "forbidden": [
+      {
+        "pattern": "(?i)\\b(i saw|we saw|noticed) (that )?(you|your firm|they)('re| are)? (hiring|recruiting|looking for)",
+        "why": "Reveals how we found them. Aug-24 doc: demonstrate understanding, never surveillance."
+      },
+      {
+        "pattern": "(?i)\\b(your|the) (job (posting|ad|listing)|open (role|position)|req\\b)",
+        "why": "Same rule. Lane H evidence TARGETS and is never quoted."
+      },
+      {
+        "pattern": "(?i)\\b(reduce|cut|shrink|lower) (your )?(headcount|staff|team)",
+        "why": "Aug-24 standing rule: anchor on getting more from what they have, never on efficiency, attrition or replacing staff."
+      },
+      {
+        "pattern": "(?i)\\b(replace|replacing) (your |the |their )?(staff|team|people|admin|assistant|paralegal|bookkeeper)",
+        "why": "Same rule. Our buyer is the person whose staff it is."
+      },
+      {
+        "pattern": "(?i)\\bwithout (having to )?hir(e|ing)\\b",
+        "why": "Same rule wearing a friendlier face. Still an efficiency pitch."
+      },
+      {
+        "pattern": "(?i)\\bsav(e|es|ing) (you |them |your |their )?(\\w+ )?(time|money|hours)\\b",
+        "why": "Efficiency framing. We sell a count of what is falling through, not savings."
+      }
+    ],
+    "price_pattern": "(?i)\\$\\s?([\\d,]+)(?:\\.\\d+)?(?:\\s?(k|/mo|per month|a month))?",
+    "price_allowed": [
+      "$1,000",
+      "$1000"
+    ],
+    "core_belief": {
+      "statement": "Work arrives through uncontrolled channels. A human retypes it into the real system. Follow-up is manual and endless. Money leaks at exactly those seams.",
+      "verbatim": true,
+      "source": "customer-pain-and-targeting-findings-2026-08-24.docx, section 4 opening paragraph",
+      "why_it_is_the_belief": "The doc reached it by finding the same wound in four segments that share no vocabulary, then noted it was already true of the first two clients before the research started. That is a diagnosis with n=4 segments plus n=2 delivered engagements, not a slogan.",
+      "not_this": [
+        "AI saves you time. The belief is about where money leaks, never about hours saved, and no audited hours-saved figure exists for any client (the-business.md).",
+        "Your tools are bad. The belief is that the SEAMS between tools are uncontrolled; the tools are often fine and expensive.",
+        "You should replace people. Standing rule: anchor on getting more from what they have, never on headcount."
+      ]
+    },
+    "working_belief": {
+      "statement": "They already have the automation. It runs. They cannot tell whether what comes out of it is true, and the places where it quietly disagrees with reality are where the money goes.",
+      "verbatim": false,
+      "as_of": "2026-09-18",
+      "supersedes": "universal.core_belief, which is KEPT unedited beside this because it is a verbatim quote from customer-pain-and-targeting-findings-2026-08-24.docx and a source is not rewritten to match newer data.",
+      "source": "RULE-2026-09-18-G in canonical/decisions.md; clusters and counts in RULE-2026-09-18-F; prose in canonical/the-business.md under 'The diagnosis'.",
+      "evidence": {
+        "population": "83 posts in r/Accounting, r/taxpros, r/Bookkeeping, r/LawFirm and r/smallbusiness, carried into #writing_ideas and #consulting-crm by the Consulting CRM bot, 2 to 17 September 2026, deduped by thread URL. 634 comments across them.",
+        "method": "Clusters read off the posters' own titles, not brought to them. An earlier pass tested the canon's vocabulary against the corpus and left 62 of 83 unexplained.",
+        "retyping_clause_hits": 0,
+        "automation_not_trusted_posts": 7,
+        "automation_not_trusted_comments": 153,
+        "two_systems_disagree_posts": 11,
+        "combined_share_of_comments": "197 of 634",
+        "limits": "The feed is selected by a lane hunting threads worth replying to; comment counts measure argument, not importance; 39 of 83 posts sit outside the six clusters."
+      },
+      "not_this": [
+        "Not 'they do too much by hand'. The retyping clause of the Aug-24 belief appears zero times in 83 posts.",
+        "Not 'their tools are bad'. They chose the tools and the tools run; the output is what they cannot verify.",
+        "Not 'AI will do it for you'. The loudest thread in the corpus is skepticism about handing a whole process to AI."
+      ]
+    }
+  },
+  "segments": [
+    {
+      "id": "cpa-tax",
+      "label": "CPA and tax",
+      "verdict": "go",
+      "pain": {
+        "statement": "The document chase. Clients dribble paperwork in and somebody spends the season asking for it.",
+        "cause": {
+          "statement": "The firm does not control the channel the work arrives through. Every intake tool the firm buys is a tool the CLIENT has to adopt, and the client never bought it. So the human becomes the portal.",
+          "evidence": [
+            "Firm owners report chasing clients into portals the clients refuse to use",
+            "One CPA on X: “Now if I can convince all my clients to do it online I may never have to fax again.”",
+            "Another begged clients to stop emailing iPhone photos of documents"
+          ],
+          "source": "customer-pain-and-targeting-findings-2026-08-24.docx"
+        },
+        "numbers": [
+          "A solo CPA with 50 clients reports 15 to 20 hours a week emailing and calling for paperwork",
+          "Association figures put document collection at 20 to 30 percent of a preparer's season hours"
+        ],
+        "source": "customer-pain-and-targeting-findings-2026-08-24.docx"
+      },
+      "buyer_words": [
+        {
+          "word": "dribble the data in",
+          "status": "verified",
+          "evidence": "buyer's own four-word phrase, Aug-24 research"
+        },
+        {
+          "word": "busy season",
+          "status": "verified",
+          "evidence": "10 unprompted appearances, taxpros 5 / Accounting 4, in a corpus searched on unrelated data-entry terms (2026-08-28 check)"
+        },
+        {
+          "word": "write off",
+          "status": "weak",
+          "evidence": "12 unprompted appearances across 555 posts. Present but NOT the pain the research found. Do not lead with it."
+        },
+        {
+          "word": "realization",
+          "status": "weak",
+          "evidence": "3 unprompted appearances"
+        }
+      ],
+      "opener": "Most firms your size spend 15-plus hours a week asking clients for documents they already sent last year. How many hours did your team spend following up last February?",
+      "objection": "Some firms fixed intake with policy alone: a late-client surcharge, or dropping every client under a realized hourly floor. Any pitch has to survive 'I already fixed this with a rule.'",
+      "deliverable": "A count of client documents that arrived and still needed a human to chase or retype, what that time was worth, and where it clusters.",
+      "countable_noun": "documents that needed a second touch",
+      "must_touch": [
+        {
+          "concept": "the document chase",
+          "any_of": [
+            "(?i)\\bdocument",
+            "(?i)\\bpaperwork",
+            "(?i)\\bchas(e|ing)",
+            "(?i)\\bfollow(ing)?[ -]?up",
+            "(?i)\\bretyp",
+            "(?i)\\bkey(ed|ing)? (it |them |what )?in"
+          ],
+          "why": "The researched pain is the document chase. A CPA email that never touches it is aimed at a pain the research did not find. Scar 2026-08-28: an offer line built on write-offs instead."
+        }
+      ],
+      "forbidden": []
+    },
+    {
+      "id": "architecture-ae",
+      "label": "Architecture and A&E",
+      "verdict": "go",
+      "pain": {
+        "statement": "Construction administration is budgeted as a fixed slice, then contractor behaviour drives the real workload. And the overrun is usually never recorded anywhere at all.",
+        "cause": {
+          "statement": "The only record of the work is made by the person that record is used to judge. So it is shaped to survive review rather than to be true, and the firm prices the next project off it.",
+          "evidence": [
+            "Engineers under-bill deliberately to protect their utilisation numbers. One: “I’m expected to complete work that realistically takes 8 hours but only bill it as 2.”",
+            "One person’s entire Friday spent collating timesheet entries and chasing people to fill them in, data the owner then ignored when pricing the next project",
+            "Staff criticised for entering actual hours rather than contracted ones"
+          ],
+          "source": "customer-pain-and-targeting-findings-2026-08-24.docx"
+        },
+        "numbers": [
+          "RFIs at 30 to 60 minutes each",
+          "Submittal logs arriving at nearly double their scope estimate",
+          "Ten unbilled additional services at $500 to $2,000 each is $5,000 to $20,000 of done-but-unbilled work per project"
+        ],
+        "source": "customer-pain-and-targeting-findings-2026-08-24.docx"
+      },
+      "buyer_words": [
+        {
+          "word": "permitting",
+          "status": "verified",
+          "evidence": "5 of 19 architecture firms use it publicly, against 0 of 7 CPA control firms, so it discriminates rather than being common English. MEASURED 2026-08-28 on the firms' OWN websites: all 19 architecture/A&E cards re-fetched (homepage plus service pages), counted per FIRM not per occurrence, with the 7 CPA sites as control. output/research-clusters/architecture-vocabulary-2026-08-28.json"
+        },
+        {
+          "word": "entitlements",
+          "status": "verified",
+          "evidence": "3 of 19 architecture firms, 0 of 7 CPA control. MEASURED 2026-08-28 on the firms' OWN websites: all 19 architecture/A&E cards re-fetched (homepage plus service pages), counted per FIRM not per occurrence, with the 7 CPA sites as control. output/research-clusters/architecture-vocabulary-2026-08-28.json"
+        },
+        {
+          "word": "construction administration",
+          "status": "unverified",
+          "evidence": "2 of 19 firms use it publicly. MEASURED 2026-08-28 on the firms' OWN websites: all 19 architecture/A&E cards re-fetched (homepage plus service pages), counted per FIRM not per occurrence, with the 7 CPA sites as control. output/research-clusters/architecture-vocabulary-2026-08-28.json"
+        },
+        {
+          "word": "RFI",
+          "status": "unverified",
+          "evidence": "0 of 19 firms use it publicly. A website is a sales surface, so this is weak evidence of absence for an internal contract word. MEASURED 2026-08-28 on the firms' OWN websites: all 19 architecture/A&E cards re-fetched (homepage plus service pages), counted per FIRM not per occurrence, with the 7 CPA sites as control. output/research-clusters/architecture-vocabulary-2026-08-28.json"
+        },
+        {
+          "word": "submittal",
+          "status": "unverified",
+          "evidence": "0 of 19 firms use it publicly. Same caveat as RFI. Note: the Mayberry Workshop pain_override uses this word in its countable noun; that is OUR word, not one Mayberry publishes. MEASURED 2026-08-28 on the firms' OWN websites: all 19 architecture/A&E cards re-fetched (homepage plus service pages), counted per FIRM not per occurrence, with the 7 CPA sites as control. output/research-clusters/architecture-vocabulary-2026-08-28.json"
+        },
+        {
+          "word": "additional services",
+          "status": "unverified",
+          "evidence": "0 of 19, and this is the WEAKEST of the four zeros (consulting-6f, 2026-08-28): the phrase lives in a fee dispute and would never appear on a homepage, so the instrument could not have found it either way. Needs a third instrument before this flag is cleared. MEASURED 2026-08-28 on the firms' OWN websites: all 19 architecture/A&E cards re-fetched (homepage plus service pages), counted per FIRM not per occurrence, with the 7 CPA sites as control. output/research-clusters/architecture-vocabulary-2026-08-28.json"
+        }
+      ],
+      "opener": "You are with a project from entitlements through permitting and then past permit issuance. On the last one you finished, do you know how much of that stretch nobody ever logged against the fee?",
+      "objection": "The money is not sitting in their system waiting to be found, so any pitch that assumes it is will be rejected by someone who knows their own books.",
+      "deliverable": "An ACTIVITY RECORD built from what actually happened: questions received, drawings issued, reviews done, stamped against project and remaining fee, independent of anyone's self-reported hours.",
+      "countable_noun": "what actually happened on the project, against the fee that was left",
+      "must_touch": [
+        {
+          "concept": "what actually happened, not what was recorded",
+          "any_of": [
+            "(?i)\\bactually (happened|moved|consumed|took|cost)",
+            "(?i)\\bwhere it (stall|stopp|sat)",
+            "(?i)\\bsecond touch",
+            "(?i)\\brecord\\b",
+            "(?i)\\bnever (got )?(logged|recorded|tracked)",
+            "(?i)\\bnobody (logs|records|tracks)",
+            "(?i)\\bstops? being tracked",
+            "(?i)\\bin nobody's log"
+          ],
+          "why": "The deliverable is an activity record, so the email has to be about the record existing, not about money being found."
+        }
+      ],
+      "forbidden": [
+        {
+          "pattern": "(?i)\\b(money|revenue|fees?|work|hours) (you|they) (already )?earned\\b",
+          "why": "THE SCAR. Aug-24 research, verbatim: 'the money often was never recorded at all... the deliverable is not we find money you already earned. That assumes the money sits recorded in their system. It does not.' Engineers under-bill deliberately to protect utilisation."
+        },
+        {
+          "pattern": "(?i)\\b(never (made it onto|got onto|reached) (a|the|an) (bill|invoice))",
+          "why": "Same scar. This was the literal wrong line written 2026-08-28 before the research was re-read."
+        },
+        {
+          "pattern": "(?i)\\b(leaving|left) (money|revenue|fees?) on the table\\b",
+          "why": "Same assumption: that the money is recorded and recoverable."
+        },
+        {
+          "pattern": "(?i)\\b(recover|recoup|reclaim|find) (the )?(money|revenue|fees?|billings?)\\b",
+          "why": "Same assumption."
+        },
+        {
+          "pattern": "(?i)\\bunbilled\\b",
+          "why": "Aug-24 research: searching 'unbilled' returned sellers and fake zeros, not buyers. It is a vendor word."
+        },
+        {
+          "pattern": "(?i)\\bscope creep\\b",
+          "why": "Same finding. Returned sellers, not owners."
+        }
+      ],
+      "_opener_was": "On your last finished project, do you know how many hours construction administration actually consumed?",
+      "_vocabulary_check_2026_08_28": {
+        "what_changed": "The opener, and two verified buyer words added. The countable noun, the pain numbers, the deliverable and the forbidden list are UNTOUCHED.",
+        "why_the_noun_did_not_change": "'what actually happened on the project, against the fee that was left' carries no trade jargon, so the vocabulary finding does not reach it. The jargon was only ever in the opener.",
+        "why_the_numbers_did_not_change": "The Aug-24 economics (RFIs at 30-60 min, submittal logs at double the estimate, $5k-$20k per project) are about construction administration and are the researched part. This check measured VOCABULARY, not economics, and does not falsify them.",
+        "second_instrument_discarded": "Reddit's r/Architects, r/architecture and r/civilengineering: 77 threads, unfiltered. DISCARDED on a failed positive control ('client' in 6 of 77, 'contractor' in 4) and confirmed by reading the titles: students, career-changers and interns, not principals. Every count from it is uninterpretable INCLUDING the near-zeros. Do not add those rooms.",
+        "upstream_unchanged": "customer-pain-and-targeting-findings-2026-08-24.docx was NOT edited. This rides on top of it as a measurement, per this file's header rule that the research is upstream."
+      }
+    },
+    {
+      "id": "small-law",
+      "label": "Small law",
+      "verdict": "go",
+      "pain": {
+        "statement": "Admin swallows the practice. Intake is the messiest loop: phone tag, ambiguous document requests generating follow-up rounds, engagement letters assembled by hand.",
+        "cause": {
+          "statement": "The state of a matter lives inside the documents, not in a system. So knowing anything requires a person to open something, and intake, the loop carrying the most documents, is the worst of them.",
+          "evidence": [
+            "An office manager tracking around 200 active cases across Google Docs and a spreadsheet, where case status is invisible without opening each file",
+            "Ambiguous document requests generate follow-up rounds; engagement letters are assembled by hand"
+          ],
+          "source": "customer-pain-and-targeting-findings-2026-08-24.docx"
+        },
+        "numbers": [
+          "Solo billable utilisation around 26 percent",
+          "15 to 18 hours a week of non-billable admin",
+          "One office manager tracking around 200 active cases across Google Docs and a spreadsheet, actively shopping"
+        ],
+        "source": "customer-pain-and-targeting-findings-2026-08-24.docx"
+      },
+      "buyer_words": [
+        {
+          "word": "timesheet",
+          "status": "verified",
+          "evidence": "Aug-24 research: returned rooms full of owners"
+        },
+        {
+          "word": "donating time",
+          "status": "verified",
+          "evidence": "same"
+        },
+        {
+          "word": "docketing",
+          "status": "verified",
+          "evidence": "productive search term in the 2026-08-07 corpus, LawFirm room"
+        },
+        {
+          "word": "client intake",
+          "status": "verified",
+          "evidence": "same"
+        }
+      ],
+      "opener": "Solos bill roughly a quarter of their hours; the rest dies in intake forms, timesheet reconstruction and chasing retainer signatures. How many days between a consult and a signed retainer at your firm right now?",
+      "objection": "Guardedness caused by vendor sales behaviour. One buyer described a vendor who harasses their office almost weekly. First contact has to read as unlike that as possible: short, specific, one question, no sequence.",
+      "deliverable": "A count of documents that came in, how many needed a second pass, and where a thing can enter the record without anything proving it.",
+      "countable_noun": "documents that needed a second touch",
+      "must_touch": [],
+      "forbidden": [
+        {
+          "pattern": "(?i)\\bunbilled\\b",
+          "why": "Vendor word, per the Aug-24 search finding."
+        }
+      ],
+      "forbidden_when": [
+        {
+          "field": "billing_model",
+          "equals": "contingency",
+          "patterns": [
+            {
+              "pattern": "(?i)\\bhours\\b[^.]{0,80}\\b(nobody|no one|never|didn't|did not)\\b[^.]{0,20}\\bbill",
+              "why": "On contingency every keyed hour is unbilled by construction, so the line says nothing. Applies to Staskus and Pezzaglia, not to Strategy Law."
+            },
+            {
+              "pattern": "(?i)\\bretainer (signature|agreement)s?\\b",
+              "why": "The stock law opener is built for hourly firms billing against a retainer. Contingency firms do not have one."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "insurance",
+      "label": "Insurance",
+      "verdict": "drop",
+      "reason": "1 usable contact in the whole export, counted independently twice.",
+      "must_touch": [],
+      "forbidden": []
+    },
+    {
+      "id": "auto-dealers",
+      "label": "Auto dealers",
+      "verdict": "park",
+      "reason": "Aug-24 verdict. Also 4 of 8 sites returned HTTP 403 behind bot protection, so desk research costs more than it returns.",
+      "must_touch": [],
+      "forbidden": []
+    },
+    {
+      "id": "bookkeeping",
+      "label": "Bookkeeping",
+      "verdict": "park",
+      "reason": "Aug-24 verdict.",
+      "must_touch": [],
+      "forbidden": []
+    },
+    {
+      "id": "property-mgmt",
+      "label": "Property management",
+      "verdict": "park",
+      "reason": "Aug-24 verdict.",
+      "must_touch": [],
+      "forbidden": []
+    },
+    {
+      "id": "engineering",
+      "label": "Engineering",
+      "verdict": "park",
+      "reason": "Aug-24 verdict. Note Civil Engineering Associates is carded under architecture-ae; it appears in the export under both labels and is one company.",
+      "must_touch": [],
+      "forbidden": []
+    }
+  ],
+  "_v2_note": "v2 (2026-09-02) adds two things and removes nothing. (1) universal.core_belief: the one diagnosis every segment's pain is a dialect of, lifted verbatim from the Aug-24 doc's own section 4 opener. (2) pain.cause on every Go segment: WHY that buyer has that pain, which the model described and never explained. Reason, founder-directed 2026-09-02: a description of a symptom is not a diagnosis, and a buyer who does not accept your diagnosis will not accept your fix. Both are read at run time by the cold-email lane AND, new in v2, by the social generator via generate.buyer_block."
+}

@@ -1,0 +1,14 @@
+{
+  "D2-astro-laptop.html": {
+    "sha256": "84223448c6ef95630383d4129dc35e1743893a20a96ba213f066e131b78aa5f3",
+    "sealed": "2026-09-18T12:04:39"
+  },
+  "D3-astro-laptop.html": {
+    "sha256": "3b5a9653fdba5cccd54b0d2c0b0172bfc5d5169edb443c095aaca004f351e122",
+    "sealed": "2026-09-18T12:04:39"
+  },
+  "D1-astro-laptop.html": {
+    "sha256": "8e2e741548b6205c826e22d8eaa55e43dfbf9c2a8d510a520d037daf1848dccb",
+    "sealed": "2026-09-18T12:04:39"
+  }
+}

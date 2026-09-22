@@ -1,0 +1,13 @@
+{
+  "name": "design-chain",
+  "owner": {
+    "name": "design-chain maintainers"
+  },
+  "plugins": [
+    {
+      "name": "design-chain",
+      "source": "./",
+      "description": "One design round for a product site, as a gate. Vision, owners, brief with verbatim anchors, three directions, craft manifest, build, measure, critique, proof, checks, readers, seal."
+    }
+  ]
+}

@@ -9,7 +9,7 @@ here judges an answer; the seal judges the round.
 
     python3 init.py [project-dir]                       ask on the terminal
     python3 init.py [project-dir] --answers answers.json   the same, from a file (what the
-                                                          /design-chain-init command does after
+                                                          /design-chain:init command does after
                                                           asking in conversation)
     ... --capture       also capture the exemplars now (needs playwright) and derive the standard
     ... --print-questions   the questions as JSON, for whoever asks them
@@ -401,7 +401,7 @@ def main(argv: list[str]) -> int:
         for p in probs:
             print("  - " + p)
         return 1
-    print("\nevery input the chain needs is in place. Next: /design-chain, for the first round.")
+    print("\nevery input the chain needs is in place. Next: /design-chain:round, for the first round.")
     return 0
 
 

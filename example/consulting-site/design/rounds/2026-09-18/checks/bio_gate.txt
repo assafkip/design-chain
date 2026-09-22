@@ -1,0 +1,6 @@
+bio_gate.py run against every visible copy line (h1/p/a text) on D1, D2, D3.
+
+0 lines mention an employer (VMware, LinkedIn, Meta, Google, ElevenLabs). The hero and section 2
+copy stay in the buyer's pain and the offer terms; pedigree isn't named on this round's pages.
+
+Result: 0 employer sentences, 0 failures, all three pages.

@@ -1,0 +1,90 @@
+{
+  "tier": "craft",
+  "_what": "Round 2026-09-18: three directions for Home's redrawn hero mechanic (RULE-2026-09-18-I). Replaces the 8-hours/2-hours drawing with two abstract records that should agree, and don't.",
+  "techniques": [
+    {
+      "id": "svg-path-draw",
+      "technique": "SVG outlines draw themselves via measured getTotalLength / strokeDasharray / strokeDashoffset, single paused GSAP timeline, power1.inOut for the sheet, power2.out for small marks. hyperframes-animation atomic rule.",
+      "role": "Every drawn element on all three pages, panels and connector marks alike.",
+      "reference": "hyperframes-animation skill, rules/svg-path-draw.md; matches hours-motion.js's own established ease choices.",
+      "pages": [
+        "D1-astro-laptop.html",
+        "D2-astro-laptop.html",
+        "D3-astro-laptop.html"
+      ],
+      "import": [
+        "getTotalLength"
+      ],
+      "applied": [
+        "strokeDashoffset"
+      ]
+    },
+    {
+      "id": "abstract-claim-source",
+      "technique": "Two abstract records, \"the claim\" and \"the source,\" no specific document type, drawn in the site's hand and made abstract per RULE-2026-09-18-J.",
+      "role": "The core mechanic, generalized from NARRATIVE.md section 13's \"a recreated record, annotated\" and Sketch.astro's \"seam\" idea (same codebase, same two-column comparison grammar).",
+      "reference": "the abstract claim and source records",
+      "pages": [
+        "D1-astro-laptop.html",
+        "D2-astro-laptop.html"
+      ],
+      "import": [
+        "\"the claim\""
+      ],
+      "applied": [
+        "\"the claim\""
+      ]
+    },
+    {
+      "id": "single-abstract-record",
+      "technique": "D3's variant: one abstract record, annotated at one point, instead of a claim/source pair.",
+      "role": "D3's narrower realization of the one idea, named as narrower in critique.md, not hidden.",
+      "reference": "the abstract claim and source records",
+      "pages": [
+        "D3-astro-laptop.html"
+      ],
+      "import": [
+        "\"the record\""
+      ],
+      "applied": [
+        "\"the record\""
+      ]
+    },
+    {
+      "id": "panel-gradient-oklab",
+      "technique": "The full-bleed dark panel gradient behind the hero and drawing, matching the live site's production panel.",
+      "role": "Production-weight fidelity, per the founder's direct instruction to match the live hero's scale rather than a scratch sketch.",
+      "reference": "the panel gradient, carried forward",
+      "pages": [
+        "D1-astro-laptop.html",
+        "D2-astro-laptop.html",
+        "D3-astro-laptop.html"
+      ],
+      "import": [
+        "linear-gradient\\(176deg"
+      ],
+      "applied": [
+        "linear-gradient\\(176deg"
+      ]
+    },
+    {
+      "id": "white-ink-on-panel",
+      "technique": "Drawn strokes are white, not the default ink color, because the drawing sits on the dark blue panel.",
+      "role": "Matches hours-motion.js's own rule since round 16h (\"the sketch now sits on the blue, so the ink is white\"). A real, unresolved tension this creates: the site's signal-blue for \"the mismatch\" cannot read against a blue background, so D1/D2's disagree state is distinguished by motion, not color — named in critique.md.",
+      "reference": "white ink on the panel",
+      "pages": [
+        "D1-astro-laptop.html",
+        "D2-astro-laptop.html",
+        "D3-astro-laptop.html"
+      ],
+      "import": [
+        "WHITE ="
+      ],
+      "applied": [
+        "stroke = WHITE"
+      ]
+    }
+  ],
+  "status": "withdrawn",
+  "reason": "Founder, 2026-09-18, on this round's animation: \"I don't know how this animation has anything to do with the heroes or anything to do with the exemplars. You just are creating two boxes and putting a check mark between them that's completely nonsensical.\" Withdrawn at his direction the same day (option 1). The pages were also edited after the 12:04 seal and measure 0.0 transitions per interactive control against an exemplar floor of 0.95. Never to be shown. A new round starts from the VISION stage once the gate rebuild (ASK-1796) lands."
+}

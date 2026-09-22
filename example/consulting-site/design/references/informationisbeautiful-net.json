@@ -1,0 +1,394 @@
+{
+  "url": "https://informationisbeautiful.net",
+  "captured": "2026-09-21",
+  "viewports": {
+    "laptop": {
+      "viewport": "1440x900",
+      "type": {
+        "families": [
+          {
+            "value": "Quicksand",
+            "count": 21
+          },
+          {
+            "value": "IBM Plex Sans",
+            "count": 17
+          },
+          {
+            "value": "sans-serif",
+            "count": 1
+          }
+        ],
+        "size_ramp": [
+          11,
+          15,
+          16,
+          20,
+          21,
+          24,
+          32,
+          36
+        ],
+        "weights": [
+          {
+            "value": "400",
+            "count": 14
+          },
+          {
+            "value": "700",
+            "count": 14
+          },
+          {
+            "value": "500",
+            "count": 8
+          },
+          {
+            "value": "600",
+            "count": 3
+          }
+        ],
+        "display": {
+          "px": 36,
+          "family": "Quicksand",
+          "weight": "700",
+          "tracking": "normal",
+          "leading": "39.6px",
+          "width_px": 1356,
+          "width_pct": 94,
+          "words": 8,
+          "text": "Learn to create impactful infographics & data visuals"
+        }
+      },
+      "color": {
+        "backgrounds": [
+          {
+            "value": "rgb(238, 238, 238)",
+            "count": 13
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 7
+          },
+          {
+            "value": "rgb(253, 216, 53)",
+            "count": 5
+          },
+          {
+            "value": "rgb(250, 250, 250)",
+            "count": 3
+          },
+          {
+            "value": "rgb(249, 249, 249)",
+            "count": 2
+          }
+        ],
+        "text": [
+          {
+            "value": "rgb(79, 79, 86)",
+            "count": 16
+          },
+          {
+            "value": "rgb(42, 42, 46)",
+            "count": 7
+          },
+          {
+            "value": "rgb(240, 98, 146)",
+            "count": 6
+          },
+          {
+            "value": "rgb(51, 51, 51)",
+            "count": 5
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 2
+          }
+        ],
+        "gradient_count": 1,
+        "gradient_samples": [
+          "linear-gradient(to left, rgb(209, 73, 128), rgb(240, 195, 61))"
+        ]
+      },
+      "shape": {
+        "radii": [
+          {
+            "value": 100,
+            "count": 7
+          },
+          {
+            "value": 2,
+            "count": 5
+          }
+        ],
+        "shadow_count": 8,
+        "shadow_samples": [
+          "rgba(0, 0, 0, 0.1) 0px 2px 2px 0px"
+        ]
+      },
+      "imagery": {
+        "img": 2,
+        "svg": 0,
+        "video": 0,
+        "canvas": 0,
+        "background_images": 3,
+        "largest_visual_pct": 27,
+        "visual_area_pct": 52,
+        "img_src_sample": [
+          "azonaws.com/www/img/information-is-beautiful-logo-flower.svg",
+          "naws.com/www/img/information-is-beautiful-logo-text-dark.svg"
+        ]
+      },
+      "motion": {
+        "animated": 0,
+        "transitioned": 15
+      },
+      "layout": {
+        "content_measure_px": 800,
+        "buttons_in_fold": 41,
+        "buttons": [
+          {
+            "text": "Skip to content",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(0, 0, 238)",
+            "padding": "0px",
+            "font_px": 16,
+            "weight": "400"
+          },
+          {
+            "text": "",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(0, 0, 238)",
+            "padding": "0px",
+            "font_px": 16,
+            "weight": "400"
+          },
+          {
+            "text": "About",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(42, 42, 46)",
+            "padding": "0px 8px",
+            "font_px": 16,
+            "weight": "500"
+          },
+          {
+            "text": "Workshops",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(42, 42, 46)",
+            "padding": "0px 8px",
+            "font_px": 16,
+            "weight": "500"
+          },
+          {
+            "text": "Books",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(42, 42, 46)",
+            "padding": "0px 8px",
+            "font_px": 16,
+            "weight": "500"
+          }
+        ]
+      }
+    },
+    "phone": {
+      "viewport": "390x844",
+      "type": {
+        "families": [
+          {
+            "value": "Quicksand",
+            "count": 26
+          },
+          {
+            "value": "IBM Plex Sans",
+            "count": 19
+          },
+          {
+            "value": "sans-serif",
+            "count": 1
+          }
+        ],
+        "size_ramp": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          18,
+          19,
+          21,
+          24
+        ],
+        "weights": [
+          {
+            "value": "700",
+            "count": 29
+          },
+          {
+            "value": "400",
+            "count": 16
+          },
+          {
+            "value": "600",
+            "count": 1
+          }
+        ],
+        "display": {
+          "px": 24,
+          "family": "Quicksand",
+          "weight": "700",
+          "tracking": "normal",
+          "leading": "26.4px",
+          "width_px": 374,
+          "width_pct": 96,
+          "words": 13,
+          "text": "we\u2019re an independent collective making sense of the world with infographics & data-visuals"
+        }
+      },
+      "color": {
+        "backgrounds": [
+          {
+            "value": "rgb(238, 238, 238)",
+            "count": 12
+          },
+          {
+            "value": "rgb(253, 216, 53)",
+            "count": 5
+          },
+          {
+            "value": "rgb(249, 249, 249)",
+            "count": 2
+          },
+          {
+            "value": "rgb(250, 250, 250)",
+            "count": 2
+          },
+          {
+            "value": "rgb(240, 98, 146)",
+            "count": 1
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.1)",
+            "count": 1
+          }
+        ],
+        "text": [
+          {
+            "value": "rgb(231, 231, 231)",
+            "count": 17
+          },
+          {
+            "value": "rgb(79, 79, 86)",
+            "count": 14
+          },
+          {
+            "value": "rgb(240, 98, 146)",
+            "count": 6
+          },
+          {
+            "value": "rgb(51, 51, 51)",
+            "count": 5
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 2
+          }
+        ],
+        "gradient_count": 2,
+        "gradient_samples": [
+          "linear-gradient(0deg, rgb(32, 34, 43), rgb(36, 39, 49))",
+          "linear-gradient(to left, rgb(209, 73, 128), rgb(240, 195, 61))"
+        ]
+      },
+      "shape": {
+        "radii": [
+          {
+            "value": 2,
+            "count": 5
+          },
+          {
+            "value": 100,
+            "count": 2
+          }
+        ],
+        "shadow_count": 9,
+        "shadow_samples": [
+          "rgba(0, 0, 0, 0.2) 0px 2px 2px 0px",
+          "rgba(0, 0, 0, 0.2) 0px 0px 5px 0px"
+        ]
+      },
+      "imagery": {
+        "img": 2,
+        "svg": 0,
+        "video": 0,
+        "canvas": 0,
+        "background_images": 2,
+        "largest_visual_pct": 22,
+        "visual_area_pct": 51,
+        "img_src_sample": [
+          "azonaws.com/www/img/information-is-beautiful-logo-flower.svg",
+          "naws.com/www/img/information-is-beautiful-logo-text-dark.svg"
+        ]
+      },
+      "motion": {
+        "animated": 0,
+        "transitioned": 14
+      },
+      "layout": {
+        "content_measure_px": 374,
+        "buttons_in_fold": 44,
+        "buttons": [
+          {
+            "text": "Skip to content",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(0, 0, 238)",
+            "padding": "0px",
+            "font_px": 16,
+            "weight": "400"
+          },
+          {
+            "text": "",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(0, 0, 238)",
+            "padding": "0px",
+            "font_px": 16,
+            "weight": "400"
+          },
+          {
+            "text": "",
+            "radius": "100%",
+            "bg": "rgb(240, 98, 146)",
+            "color": "rgb(255, 255, 255)",
+            "padding": "5px",
+            "font_px": 24,
+            "weight": "400"
+          },
+          {
+            "text": "Home",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(231, 231, 231)",
+            "padding": "8px 0px 8px 10px",
+            "font_px": 16,
+            "weight": "700"
+          },
+          {
+            "text": "About",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(231, 231, 231)",
+            "padding": "8px 0px 8px 10px",
+            "font_px": 16,
+            "weight": "700"
+          }
+        ]
+      }
+    }
+  },
+  "slug": "informationisbeautiful-net"
+}

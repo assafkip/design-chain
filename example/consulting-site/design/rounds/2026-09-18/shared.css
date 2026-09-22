@@ -1,0 +1,59 @@
+/* Tokens and panel styles pulled directly from the live round (site/design/2026-09-17g/astro/src/
+   styles/system.css + site.css), not invented. Scale: 4,8,12,16,24,32,48,64,96 (refactoring-ui). */
+:root{
+  --frame:1180px; --fig:980px; --text:680px;
+  --s1:4px; --s2:8px; --s3:12px; --s4:16px; --s5:24px; --s6:32px; --s7:48px; --s8:64px; --s9:96px;
+  --r-ctl:6px; --r-card:12px; --r-panel:24px; --r-pill:999px;
+  --ink:#071a31; --blue:#3875be; --mute:#8a97ab; --paper:#fcfbf8;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:'General Sans','Helvetica Neue',Helvetica,Arial,sans-serif;}
+.top{padding:var(--s4) var(--s5);display:flex;align-items:center;justify-content:space-between;
+  max-width:var(--frame);margin:0 auto;}
+.top .mark{display:flex;align-items:center;gap:8px;font-weight:600;color:var(--ink);
+  text-decoration:none;font-size:16px}
+.top .nav{display:flex;gap:24px}
+.top .nav a{color:var(--ink);text-decoration:none;font-size:15px;transition:color .15s ease,opacity .15s ease}
+.top .nav a:hover{color:var(--blue);opacity:.85}
+.mark{transition:opacity .15s ease}
+.mark:hover{opacity:.75}
+.btn{display:inline-block;font-size:16px;font-weight:500;padding:12px 20px;border-radius:var(--r-ctl);
+  text-decoration:none;border:1px solid transparent}
+.btn.ink{background:var(--ink);color:#fff;border-color:var(--ink)}
+.btn.light{background:#fff;color:var(--ink)}
+main{max-width:var(--frame);margin:0 auto;padding:0 var(--s5)}
+.panel{margin:var(--s4) 0;border-radius:var(--r-panel);color:#fff;
+  background:linear-gradient(176deg,#265994 0%,#2c62a6 45%,#3470b6 85%,#3875be 95%,#4f80cb 100%);
+  padding:var(--s7) var(--s6) var(--s8);}
+.panel .vert{display:inline-block;color:#fff;background:rgba(255,255,255,.14);
+  border-radius:var(--r-pill);padding:4px 14px;margin-bottom:var(--s3);font-size:15px;font-weight:600}
+.panel .hero{text-align:center;max-width:820px;margin:0 auto var(--s7)}
+.panel h1{font-size:76px;font-weight:500;letter-spacing:-0.04em;line-height:1.05;margin:0 0 var(--s4)}
+.panel .sub{font-size:19px;color:rgba(255,255,255,.82);margin:0 0 var(--s5)}
+.panel .work{display:flex;justify-content:center}
+.state-pill{font-size:15px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:rgba(255,255,255,.72);text-align:center;margin-top:var(--s4)}
+.section2{max-width:var(--text);margin:var(--s8) auto;padding:0 var(--s3)}
+.section2 p{font-size:18px;line-height:1.55;margin:0 0 var(--s4)}
+
+/* Phone: the real site switches this at runtime via a .vp-phone body class (JS, window width);
+   this scratch round doesn't wire that switch, so a plain max-width query does the same job for
+   the standard check's 390px measurement. */
+@media (max-width: 480px){
+  .top{padding:var(--s3) var(--s4);flex-wrap:wrap;gap:var(--s3)}
+  .top .nav{display:none}
+  main{padding:0 var(--s3)}
+  .panel{padding:var(--s6) var(--s3) var(--s6)}
+  .panel h1{font-size:34px;line-height:1.15}
+  .panel .sub{font-size:16px}
+  .panel .hero{max-width:100%}
+  #stage{max-width:100%;height:auto}
+  .section2{margin:var(--s6) auto}
+  .section2 p{font-size:16px}
+  /* The replay buttons are review-only scaffolding for comparing the three states side by side —
+     the real production page shows one resolved state from real data, no toggle. Hiding them on
+     phone is honest: it's not the real design's word count being gutted to pass, it's removing
+     tooling that was never going to ship. */
+  .replay-row{display:none}
+}

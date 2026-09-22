@@ -1,0 +1,94 @@
+impeccable anti-pattern detector over this design-chain round.
+detector: /Users/assafkipnis/projects/cole-gtm/.agents/skills/impeccable/scripts/detector/detect-antipatterns.mjs
+This is a defect-ABSENCE check. Zero findings means no known anti-pattern was
+detected. It never means the page is good; see the craft manifest for the half
+that asks whether the work was actually done.
+
+=== NEGATIVE CONTROL (a deliberately slop page; these results are only worth
+    reading because this one trips) ===
+control: http://127.0.0.1:8938/.impeccable-control.html
+engine: browser (URL, computed styles resolved)
+    http://127.0.0.1:8938/.impeccable-control.html
+      [gradient-text] background-clip: text + gradient
+        → Gradient text is decorative rather than meaningful — a common AI tell, especially on headings and metrics. Use solid colors for text.
+      [ai-color-palette] Purple/violet gradient background
+        → Purple/violet gradients and cyan-on-dark are the most recognizable tells of AI-generated UIs. Choose a distinctive, intentional palette.
+      [body-text-viewport-edge] <p> with 72-char body bleeds to viewport edge (left 8px / right 8px)
+        → Body paragraphs render flush against the left or right viewport edge with no container providing horizontal padding. Wrap content in a container with at least 16px (ideally 24-32px) of horizontal padding, or apply max-width with mx-auto.
+      [ai-color-palette] Purple/violet accent colors detected
+        → Purple/violet gradients and cyan-on-dark are the most recognizable tells of AI-generated UIs. Choose a distinctive, intentional palette.
+      [gradient-text] background-clip: text + gradient
+        → Gradient text is decorative rather than meaningful — a common AI tell, especially on headings and metrics. Use solid colors for text.
+      [low-contrast] pixel contrast 1.6:1 median 3.3:1 (need 3:1) on background-clip text, gradient background "Unlock the power of AI for your business"
+        → Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.
+    
+    6 anti-patterns found.
+control fired: YES
+
+=== THE PAGES ===
+--- D1-astro-laptop.html
+    engine: browser (URL, computed styles resolved)
+    http://127.0.0.1:8938/D1-astro-laptop.html
+      [low-contrast] 4.0:1 (need 4.5:1) — text #ffffff on #4f80cb
+        → Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.
+      [line-length] ~86 chars/line (aim for <80)
+        → Text lines wider than ~80 characters are hard to read. The eye loses its place tracking back to the start of the next line. Add a max-width (65ch to 75ch) to text containers.
+      [low-contrast] 4.0:1 (need 4.5:1) — text #ffffff on #4f80cb
+        → Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.
+      [low-contrast] 4.0:1 (need 4.5:1) — text #ffffff on #4f80cb
+        → Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.
+      [low-contrast] 4.0:1 (need 4.5:1) — text #ffffff on #4f80cb
+        → Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.
+    
+    5 anti-patterns found.
+--- D2-astro-laptop.html
+    engine: browser (URL, computed styles resolved)
+    http://127.0.0.1:8938/D2-astro-laptop.html
+      [low-contrast] 4.0:1 (need 4.5:1) — text #ffffff on #4f80cb
+        → Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.
+      [line-length] ~86 chars/line (aim for <80)
+        → Text lines wider than ~80 characters are hard to read. The eye loses its place tracking back to the start of the next line. Add a max-width (65ch to 75ch) to text containers.
+      [low-contrast] 4.0:1 (need 4.5:1) — text #ffffff on #4f80cb
+        → Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.
+      [low-contrast] 4.0:1 (need 4.5:1) — text #ffffff on #4f80cb
+        → Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.
+      [low-contrast] 4.0:1 (need 4.5:1) — text #ffffff on #4f80cb
+        → Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.
+    
+    5 anti-patterns found.
+--- D3-astro-laptop.html
+    engine: browser (URL, computed styles resolved)
+    http://127.0.0.1:8938/D3-astro-laptop.html
+      [low-contrast] 4.0:1 (need 4.5:1) — text #ffffff on #4f80cb
+        → Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.
+      [line-length] ~86 chars/line (aim for <80)
+        → Text lines wider than ~80 characters are hard to read. The eye loses its place tracking back to the start of the next line. Add a max-width (65ch to 75ch) to text containers.
+      [low-contrast] 4.0:1 (need 4.5:1) — text #ffffff on #4f80cb
+        → Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.
+      [low-contrast] 4.0:1 (need 4.5:1) — text #ffffff on #4f80cb
+        → Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.
+    
+    4 anti-patterns found.
+
+=== WHAT THIS RUN COULD NOT SEE ===
+Nothing known: the browser engine ran, so computed styles were resolved.
+
+=== VERIFIED FALSE POSITIVE (checked, not just noted) ===
+The [low-contrast] findings above ("text #ffffff on #4f80cb", 4-5 per page) do not match the
+actual rendered page. Sampled real pixels from D1-astro-laptop.png at the flagged elements'
+approximate position (720, 700): true rendered color is rgb(49,108,177), not #4f80cb. #4f80cb is
+the panel gradient's declared LAST CSS color-stop; the detector appears to read that literal value
+as "the background" for gradient-backed ancestors rather than sampling the true rendered color at
+the element's actual position.
+
+Real WCAG contrast computed from the sampled pixel: white on rgb(49,108,177) = 5.37:1, above the
+4.5:1 requirement. Verified with the standard relative-luminance formula, not assumed.
+
+This is the detector's limitation with gradient backgrounds, not a defect in the page. Fixing the
+button backgrounds to opaque colors (done, see D1/D2/D3 CSS) was a real improvement regardless,
+just not what actually silenced this specific finding, since it never measured the true problem.
+Kept unresolved in the raw tool output above rather than deleted, so the discrepancy is auditable.
+
+The [line-length] finding (~86 chars, aim <80) is real but not a project violation: this project's
+own standard (design-chain.json max_line_chars: 90) already passed via design-standard-check.py.
+impeccable's <80 recommendation is a generic default, not this project's contract.

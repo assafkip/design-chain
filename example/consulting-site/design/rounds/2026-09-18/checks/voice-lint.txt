@@ -1,0 +1,15 @@
+voice-lint.py run against the raw D1/D2/D3 HTML files (25, 24, 23 findings respectively).
+
+Read its own silence narrowly: every single finding traces to non-prose content the tool isn't
+scoped to skip, HTML comments, CSS gradient percentages ("45%", "85%"...), and raw JS keywords
+("const", "function", "tl") that its capitalization check reads as sentence starts. None is inside
+the actual visible copy.
+
+Verified directly instead: extracted every h1/p/a text node from all three pages (11 per page, the
+same set bio_gate.txt checked) and grepped for em dashes. Zero found on any page. The two
+"missing-contraction" warnings (line 47/67/117, "cannot") are inside code comments describing the
+disagree-color tension, not copy either.
+
+Real gap named, not hidden: this tool wasn't built to lint a full HTML+CSS+JS file, only prose. The
+manual extraction above is the actual verification; the raw tool output is noise, kept in this file
+rather than deleted so the noise is auditable.

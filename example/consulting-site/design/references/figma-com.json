@@ -1,0 +1,335 @@
+{
+  "url": "https://figma.com",
+  "captured": "2026-09-21",
+  "viewports": {
+    "laptop": {
+      "viewport": "1440x900",
+      "type": {
+        "families": [
+          {
+            "value": "figmaSans",
+            "count": 19
+          }
+        ],
+        "size_ramp": [
+          16,
+          18,
+          30,
+          56
+        ],
+        "weights": [
+          {
+            "value": "400",
+            "count": 11
+          },
+          {
+            "value": "330",
+            "count": 7
+          },
+          {
+            "value": "540",
+            "count": 1
+          }
+        ],
+        "display": {
+          "px": 56,
+          "family": "figmaSans",
+          "weight": "400",
+          "tracking": "-1.25px",
+          "leading": "56px",
+          "width_px": 328,
+          "width_pct": 23,
+          "words": 6,
+          "text": "The intelligent canvas for infinite creativity"
+        }
+      },
+      "color": {
+        "backgrounds": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 5
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 4
+          },
+          {
+            "value": "oklch(0 0 none / 0)",
+            "count": 1
+          }
+        ],
+        "text": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 10
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 9
+          }
+        ],
+        "gradient_count": 0,
+        "gradient_samples": []
+      },
+      "shape": {
+        "radii": [
+          {
+            "value": 8,
+            "count": 3
+          },
+          {
+            "value": 2,
+            "count": 1
+          },
+          {
+            "value": 24,
+            "count": 1
+          },
+          {
+            "value": 9999,
+            "count": 1
+          },
+          {
+            "value": 16,
+            "count": 1
+          }
+        ],
+        "shadow_count": 2,
+        "shadow_samples": [
+          "oklch(0 0 none / 0.16) 0px 1px 0px 0px",
+          "oklch(0 0 none / 0.16) 0px 0px 0px 1px inset"
+        ]
+      },
+      "imagery": {
+        "img": 0,
+        "svg": 11,
+        "video": 0,
+        "canvas": 0,
+        "background_images": 0,
+        "largest_visual_pct": 0,
+        "visual_area_pct": 0,
+        "img_src_sample": []
+      },
+      "motion": {
+        "animated": 0,
+        "transitioned": 18
+      },
+      "layout": {
+        "content_measure_px": 368,
+        "buttons_in_fold": 19,
+        "buttons": [
+          {
+            "text": "privacy policy.",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(255, 255, 255)",
+            "padding": "0px",
+            "font_px": 18,
+            "weight": "330"
+          },
+          {
+            "text": "collected",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(255, 255, 255)",
+            "padding": "0px",
+            "font_px": 18,
+            "weight": "330"
+          },
+          {
+            "text": "used",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(255, 255, 255)",
+            "padding": "0px",
+            "font_px": 18,
+            "weight": "330"
+          },
+          {
+            "text": "\u201csold\u201d or \u201cshared\u201d",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(255, 255, 255)",
+            "padding": "0px",
+            "font_px": 18,
+            "weight": "330"
+          },
+          {
+            "text": "retained",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(255, 255, 255)",
+            "padding": "0px",
+            "font_px": 18,
+            "weight": "330"
+          }
+        ]
+      }
+    },
+    "phone": {
+      "viewport": "390x844",
+      "type": {
+        "families": [
+          {
+            "value": "figmaSans",
+            "count": 12
+          }
+        ],
+        "size_ramp": [
+          14,
+          16,
+          18,
+          24,
+          36
+        ],
+        "weights": [
+          {
+            "value": "340",
+            "count": 6
+          },
+          {
+            "value": "400",
+            "count": 4
+          },
+          {
+            "value": "580",
+            "count": 1
+          },
+          {
+            "value": "330",
+            "count": 1
+          }
+        ],
+        "display": {
+          "px": 36,
+          "family": "figmaSans",
+          "weight": "400",
+          "tracking": "-1.25px",
+          "leading": "36px",
+          "width_px": 358,
+          "width_pct": 92,
+          "words": 6,
+          "text": "The intelligent canvas for infinite creativity"
+        }
+      },
+      "color": {
+        "backgrounds": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 5
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 4
+          }
+        ],
+        "text": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 10
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 2
+          }
+        ],
+        "gradient_count": 0,
+        "gradient_samples": []
+      },
+      "shape": {
+        "radii": [
+          {
+            "value": 8,
+            "count": 2
+          },
+          {
+            "value": 2,
+            "count": 1
+          },
+          {
+            "value": 24,
+            "count": 1
+          },
+          {
+            "value": 9999,
+            "count": 1
+          },
+          {
+            "value": 16,
+            "count": 1
+          }
+        ],
+        "shadow_count": 1,
+        "shadow_samples": [
+          "oklch(0 0 none / 0.16) 0px 1px 0px 0px"
+        ]
+      },
+      "imagery": {
+        "img": 0,
+        "svg": 7,
+        "video": 0,
+        "canvas": 0,
+        "background_images": 0,
+        "largest_visual_pct": 0,
+        "visual_area_pct": 2,
+        "img_src_sample": []
+      },
+      "motion": {
+        "animated": 0,
+        "transitioned": 10
+      },
+      "layout": {
+        "content_measure_px": 270,
+        "buttons_in_fold": 13,
+        "buttons": [
+          {
+            "text": "privacy policy.",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(255, 255, 255)",
+            "padding": "0px",
+            "font_px": 14,
+            "weight": "340"
+          },
+          {
+            "text": "collected",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(255, 255, 255)",
+            "padding": "0px",
+            "font_px": 14,
+            "weight": "340"
+          },
+          {
+            "text": "used",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(255, 255, 255)",
+            "padding": "0px",
+            "font_px": 14,
+            "weight": "340"
+          },
+          {
+            "text": "\u201csold\u201d or \u201cshared\u201d",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(255, 255, 255)",
+            "padding": "0px",
+            "font_px": 14,
+            "weight": "340"
+          },
+          {
+            "text": "retained",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(255, 255, 255)",
+            "padding": "0px",
+            "font_px": 14,
+            "weight": "340"
+          }
+        ]
+      }
+    }
+  },
+  "slug": "figma-com"
+}

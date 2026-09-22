@@ -1,0 +1,390 @@
+{
+  "url": "https://notion.com",
+  "captured": "2026-09-21",
+  "viewports": {
+    "laptop": {
+      "viewport": "1440x900",
+      "type": {
+        "families": [
+          {
+            "value": "NotionInter",
+            "count": 41
+          }
+        ],
+        "size_ramp": [
+          12,
+          14,
+          16,
+          20,
+          22,
+          72,
+          96
+        ],
+        "weights": [
+          {
+            "value": "500",
+            "count": 29
+          },
+          {
+            "value": "700",
+            "count": 7
+          },
+          {
+            "value": "400",
+            "count": 4
+          },
+          {
+            "value": "600",
+            "count": 1
+          }
+        ],
+        "display": {
+          "px": 96,
+          "family": "NotionInter",
+          "weight": "600",
+          "tracking": "-4.6px",
+          "leading": "100px",
+          "width_px": 1252,
+          "width_pct": 87,
+          "words": 5,
+          "text": "Where teams and agents together."
+        }
+      },
+      "color": {
+        "backgrounds": [
+          {
+            "value": "rgba(255, 255, 255, 0)",
+            "count": 9
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.75)",
+            "count": 9
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 4
+          },
+          {
+            "value": "rgb(0, 117, 222)",
+            "count": 2
+          },
+          {
+            "value": "rgb(242, 249, 255)",
+            "count": 1
+          },
+          {
+            "value": "rgb(254, 243, 241)",
+            "count": 1
+          }
+        ],
+        "text": [
+          {
+            "value": "rgba(0, 0, 0, 0.898)",
+            "count": 19
+          },
+          {
+            "value": "rgb(0, 117, 222)",
+            "count": 6
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.95)",
+            "count": 6
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.54)",
+            "count": 4
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 3
+          }
+        ],
+        "gradient_count": 0,
+        "gradient_samples": []
+      },
+      "shape": {
+        "radii": [
+          {
+            "value": 8,
+            "count": 31
+          },
+          {
+            "value": 4,
+            "count": 7
+          },
+          {
+            "value": 16,
+            "count": 2
+          },
+          {
+            "value": 9999,
+            "count": 1
+          }
+        ],
+        "shadow_count": 4,
+        "shadow_samples": [
+          "rgba(0, 0, 0, 0) 0px 1px 0px 0px",
+          "rgba(0, 0, 0, 0.01) 0px 0.175px 1.041px 0px, rgba(0, 0, 0, 0"
+        ]
+      },
+      "imagery": {
+        "img": 15,
+        "svg": 5,
+        "video": 1,
+        "canvas": 0,
+        "background_images": 0,
+        "largest_visual_pct": 27,
+        "visual_area_pct": 66,
+        "img_src_sample": [
+          "front-static%2Fnav%2FallFeaturesNav%2Fcapture.png&w=256&q=75",
+          "%2Ffront-static%2Fnav%2FallFeaturesNav%2Ffind.png&w=256&q=75",
+          "ront-static%2Fnav%2FallFeaturesNav%2Fautomate.png&w=256&q=75"
+        ]
+      },
+      "motion": {
+        "animated": 1,
+        "transitioned": 36
+      },
+      "layout": {
+        "content_measure_px": 1252,
+        "buttons_in_fold": 32,
+        "buttons": [
+          {
+            "text": "",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgba(0, 0, 0, 0.95)",
+            "padding": "0px",
+            "font_px": 16,
+            "weight": "400"
+          },
+          {
+            "text": "Product",
+            "radius": "4px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgba(0, 0, 0, 0.898)",
+            "padding": "5px 10px",
+            "font_px": 16,
+            "weight": "400"
+          },
+          {
+            "text": "",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgb(0, 117, 222)",
+            "padding": "0px",
+            "font_px": 12,
+            "weight": "500"
+          },
+          {
+            "text": "",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgba(0, 0, 0, 0.95)",
+            "padding": "0px",
+            "font_px": 16,
+            "weight": "400"
+          },
+          {
+            "text": "",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgba(0, 0, 0, 0.95)",
+            "padding": "0px",
+            "font_px": 16,
+            "weight": "400"
+          }
+        ]
+      }
+    },
+    "phone": {
+      "viewport": "390x844",
+      "type": {
+        "families": [
+          {
+            "value": "NotionInter",
+            "count": 10
+          }
+        ],
+        "size_ramp": [
+          14,
+          16,
+          22,
+          32,
+          42
+        ],
+        "weights": [
+          {
+            "value": "500",
+            "count": 4
+          },
+          {
+            "value": "400",
+            "count": 3
+          },
+          {
+            "value": "700",
+            "count": 2
+          },
+          {
+            "value": "600",
+            "count": 1
+          }
+        ],
+        "display": {
+          "px": 42,
+          "family": "NotionInter",
+          "weight": "600",
+          "tracking": "-1.5px",
+          "leading": "48px",
+          "width_px": 358,
+          "width_pct": 92,
+          "words": 5,
+          "text": "Where teams and agents together."
+        }
+      },
+      "color": {
+        "backgrounds": [
+          {
+            "value": "rgba(255, 255, 255, 0)",
+            "count": 23
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.75)",
+            "count": 23
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 5
+          },
+          {
+            "value": "rgb(0, 117, 222)",
+            "count": 2
+          },
+          {
+            "value": "rgb(255, 222, 196)",
+            "count": 1
+          },
+          {
+            "value": "rgb(230, 243, 254)",
+            "count": 1
+          }
+        ],
+        "text": [
+          {
+            "value": "rgba(0, 0, 0, 0.95)",
+            "count": 3
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 2
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.898)",
+            "count": 2
+          },
+          {
+            "value": "rgb(0, 91, 171)",
+            "count": 1
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.54)",
+            "count": 1
+          }
+        ],
+        "gradient_count": 0,
+        "gradient_samples": []
+      },
+      "shape": {
+        "radii": [
+          {
+            "value": 8,
+            "count": 26
+          },
+          {
+            "value": 6,
+            "count": 3
+          },
+          {
+            "value": 9999,
+            "count": 1
+          }
+        ],
+        "shadow_count": 1,
+        "shadow_samples": [
+          "rgba(0, 0, 0, 0) 0px 1px 0px 0px"
+        ]
+      },
+      "imagery": {
+        "img": 30,
+        "svg": 2,
+        "video": 0,
+        "canvas": 0,
+        "background_images": 0,
+        "largest_visual_pct": 1,
+        "visual_area_pct": 7,
+        "img_src_sample": [
+          "%2Fpages%2Fhome%2Fteams-agents-hero%2Fpile_1.webp&w=256&q=75",
+          "%2Fpages%2Fhome%2Fteams-agents-hero%2Fpile_2.webp&w=256&q=75",
+          "%2Fpages%2Fhome%2Fteams-agents-hero%2Fpile_3.webp&w=256&q=75"
+        ]
+      },
+      "motion": {
+        "animated": 25,
+        "transitioned": 36
+      },
+      "layout": {
+        "content_measure_px": 358,
+        "buttons_in_fold": 15,
+        "buttons": [
+          {
+            "text": "",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgba(0, 0, 0, 0.95)",
+            "padding": "0px",
+            "font_px": 16,
+            "weight": "400"
+          },
+          {
+            "text": "Get Notion free",
+            "radius": "8px",
+            "bg": "rgb(0, 117, 222)",
+            "color": "rgb(255, 255, 255)",
+            "padding": "4px 14px",
+            "font_px": 16,
+            "weight": "500"
+          },
+          {
+            "text": "",
+            "radius": "0px",
+            "bg": "rgba(0, 0, 0, 0)",
+            "color": "rgba(0, 0, 0, 0.898)",
+            "padding": "11px",
+            "font_px": 16,
+            "weight": "400"
+          },
+          {
+            "text": "Get Notion free",
+            "radius": "8px",
+            "bg": "rgb(0, 117, 222)",
+            "color": "rgb(255, 255, 255)",
+            "padding": "6px 15px",
+            "font_px": 16,
+            "weight": "500"
+          },
+          {
+            "text": "Request a demo",
+            "radius": "8px",
+            "bg": "rgb(230, 243, 254)",
+            "color": "rgb(0, 91, 171)",
+            "padding": "6px 15px",
+            "font_px": 16,
+            "weight": "500"
+          }
+        ]
+      }
+    }
+  },
+  "slug": "notion-com"
+}

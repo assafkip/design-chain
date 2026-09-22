@@ -1,0 +1,35 @@
+{
+  "exemplars": [
+    {
+      "url": "https://squarespace.com",
+      "added": "2026-09-15"
+    },
+    {
+      "url": "https://calendly.com",
+      "added": "2026-09-15"
+    },
+    {
+      "url": "https://stripe.com",
+      "added": "2026-09-15"
+    },
+    {
+      "url": "https://notion.com",
+      "added": "2026-09-15"
+    },
+    {
+      "url": "https://figma.com",
+      "added": "2026-09-15"
+    },
+    {
+      "url": "https://informationisbeautiful.net",
+      "added": "2026-09-21"
+    }
+  ],
+  "_dropped": [
+    {
+      "url": "https://canva.com",
+      "dropped": "2026-09-15",
+      "why": "Founder-directed: 'Just drop canva.' Every capture returned canva.com's bot-wall page ('We'll have you designing again soon', one SVG, zero buttons, two type sizes), never its design. Its numbers described an error page and, left in the set, they pulled the derived floors in design-gap-check.py down toward zero: the background-colour floor read 1 instead of 3. Capture and screenshots moved to _dropped/, not deleted."
+    }
+  ]
+}

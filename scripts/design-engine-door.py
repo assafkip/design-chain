@@ -108,7 +108,7 @@ def decide(payload: dict) -> tuple[int, str]:
     if not any(os.path.isfile(os.path.join(d, "design-chain.json")) for d in parts):
         return 0, ""
     return 2, (f"'{raw}' is a design engine, and this session has no open design-chain round. Start with "
-               f"/design-chain; it calls {name} at its stage and records it.")
+               f"/design-chain:round; it calls {name} at its stage and records it.")
 
 
 def main() -> int:
